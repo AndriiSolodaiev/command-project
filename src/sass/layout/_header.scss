@@ -1,0 +1,29 @@
+
+.page-header__navigation-list {
+    display: flex;
+    gap: 27px;
+}
+
+.page-header__navigation-list-link {
+    color: var(--text-color_light);
+    &:hover,&:focus {
+        color: var(--accent-color);
+    }
+}
+
+.logo {
+    width: 60px;
+    height: 65px;
+}
+
+
+.mobile-menu-btn {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.mobile-menu-btn__icon {
+    height: 32px;
+    width: 32px;
+}
