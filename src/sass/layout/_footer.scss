@@ -1,0 +1,22 @@
+.footer_bg {
+    background-color: var(--base-bg-color);
+}
+
+
+.footer_phone-color {
+    color: var(--text-color_light);
+}
+
+.footer_circulation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;   
+    border-top: 1px solid #E1E1E1;
+}
