@@ -1,0 +1,16 @@
+.mdl-title {
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: #131313;
+}
+
+@media screen and (min-width: 768px) {
+    .mdl-title {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    
+}
