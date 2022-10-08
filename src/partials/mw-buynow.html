@@ -1,0 +1,90 @@
+<div class="backdrop is-hidden" buy-now-menu buy-now-menu-mobile>
+  <div class="buy-now-menu container">
+    <button class="buy-now-menu__btn-close" type="button" buy-now-menu-close>
+      <svg class="buy-now-menu__icon-close">
+        <use aria-label="close icon" href="./images/sprite.svg#cross"></use>
+      </svg>
+    </button>
+    <p class="buy-now-menu__heading mdl-title">Buy now</p>
+    <form>
+      <ul class="buy-now-menu__list list">
+        <li class="buy-now-menu__list-item">
+          <div class="buy-now-menu__list-item-container">
+            <label>
+              <input
+                class="buy-now-menu__checkbox visually-hidden"
+                type="checkbox"
+                name="ice_cream"
+              />
+              <div class="buy-now-menu__list-item-bcg1"></div>
+              <div class="buy-now-menu__list-item-img1"></div>
+              <div class="buy-now-menu__list-item-brd1">
+                <p class="buy-now-menu__list-item-text">Ice cream</p>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="buy-now-menu__list-item">
+          <div class="buy-now-menu__list-item-container">
+            <label>
+              <input
+                class="buy-now-menu__checkbox visually-hidden"
+                type="checkbox"
+                name="ice_coffee"
+              />
+              <div class="buy-now-menu__list-item-bcg2"></div>
+              <div class="buy-now-menu__list-item-img2"></div>
+              <div class="buy-now-menu__list-item-brd2">
+                <p class="buy-now-menu__list-item-text">Ice coffee</p>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="buy-now-menu__list-item">
+          <div class="buy-now-menu__list-item-container">
+            <label>
+              <input
+                class="buy-now-menu__checkbox visually-hidden"
+                type="checkbox"
+                name="milk_shake"
+              />
+              <div class="buy-now-menu__list-item-bcg3"></div>
+              <div class="buy-now-menu__list-item-img3"></div>
+              <div class="buy-now-menu__list-item-brd3">
+                <p class="buy-now-menu__list-item-text">Milk shake</p>
+              </div>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <div class="buy-now-menu__form">
+        <input
+          class="buy-now-menu__form-input"
+          type="text"
+          name="user_name"
+          required
+          minlength="3"
+          pattern="[a-zA-Z]+"
+          placeholder="Name"
+        />
+        <input
+          class="buy-now-menu__form-input"
+          type="tel"
+          name="user_tel"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone"
+        />
+        <textarea
+          class="buy-now-menu__form-comment"
+          name="user_comment"
+          placeholder="Comment"
+        ></textarea>
+        <button type="submit" class="main-button-filled submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
