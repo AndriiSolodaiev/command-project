@@ -246,6 +246,15 @@ textarea {
         gap: 32px;
         margin-bottom: 40px;
     }
+    .buy-now-menu__list-item-img1 {
+        background-image: url(../images/img-tablet/buy-now-bcg1-tablet.png);
+    }
+    .buy-now-menu__list-item-img2 {
+        background-image: url(../images/img-tablet/buy-now-bcg2-tablet.png);
+    }
+    .buy-now-menu__list-item-img3 {
+        background-image: url(../images/img-tablet/buy-now-bcg3-tablet.png);
+    }
     .buy-now-menu__form-input {
         height: 42px;
         margin-bottom: 16px;
@@ -255,7 +264,6 @@ textarea {
         &::placeholder {
             font-size: 14px;
             }
-
     }
     .buy-now-menu__form-comment {
         height: 84px;
