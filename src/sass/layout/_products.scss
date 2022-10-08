@@ -28,9 +28,12 @@
     }
 
 }
-.conteiner{
+.products{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-image: url(/src/images/products/icebackground-tell.png);
     
@@ -51,6 +54,23 @@
 }
 }
 
+.products__cards{
+    display: block;
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    
+        @include table {
+            display: flex;
+            gap: 16px;
+        }
+                 @include disktop {
+                     display: flex;
+                     gap: 33px;
+                 }
+}
 .products__title{
     font-weight: 800;
     font-size: 18px;
@@ -60,7 +80,6 @@
     color: #131313;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
 }
 .products__pre-title{
 font-family: 'Seymour One';
@@ -75,7 +94,6 @@ color: #131313;
 justify-content: center;
 align-items: center;
 margin-top: 12px;
-margin-bottom: 40px;
 }
 
 .products__foto{
@@ -84,14 +102,33 @@ align-items: center;
 text-align: center;
 display: flex;
 margin: 0 auto;
+@include disktop {
+    width: 302px;
+    height: 318px;
+}
 }
 .products__list{
+    margin-bottom: 50px;
+    border-radius: 24px;
     display: block;
-    margin: 0px 20px 56px 20px;
-    width: 100%;
     width: 280px;
     height: 528px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    @include table {
+            width: 224px;
+            height: 482px;
+            margin: 0 auto;
+        }     
+                 @include disktop {
+                     width: 370px;
+                     height: 718px;
+                    //  margin: 0 auto;
+                 }
 }
+
 .products__information-title{
     font-family: 'Montserrat';
         font-style: normal;
@@ -113,73 +150,92 @@ font-family: 'Montserrat';
     text-align: center;
     letter-spacing: 0.04em;
     color: #131313;
+    @include disktop {
+            margin-top: 65px;
+            font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 176%;
+                text-align: center;
+                letter-spacing: 0.04;
+        }  
+}
+
+.products__information-icecream,
+.products__information-icecoffee,
+.products__information-milkshakes
+{ border-radius: 24px;
+        padding-left: 40px;
+        padding-top: 123px;
+        padding-right: 40px;
+        text-align: center;
+        line-height: 1.8;
+        margin-top: -128px;
+        @include table {
+        padding-left: 26px;
+        padding-right: 26px;
+            }
+        @include disktop {
+            padding-left: 63px;
+            padding-right: 63px;
+}
 }
 
 .products__information-icecream{
-        width: 280px;
-        height: 420px;
-        background: #AEC6A5;
-        border-radius: 24px;
-        padding-left: 53px;
-        padding-top: 123px;
-        padding-bottom: 20px;
-        padding-right: 53px;
-        text-align: center;
-        line-height: 1.8;
-        margin-top: -128px;
+background: #AEC6A5;
 }
 .products__information-icecoffee {
-    width: 280px;
-    height: 420px;
     background: #EFD478;
-    border-radius: 24px;
-    padding-left: 53px;
-    padding-top: 123px;
-    padding-bottom: 20px;
-    padding-right: 53px;
-    text-align: center;
-    line-height: 1.8;
-    margin-top:-128px;
 }
 .products__information-milkshakes {
-    width: 280px;
-        height: 420px;
-        background: #D6936D;
-        border-radius: 24px;
-        padding-left: 53px;
-        padding-top: 123px;
-        padding-bottom: 20px;
-        padding-right: 53px;
-        text-align: center;
-        line-height: 1.8;
-        margin-top: -128px;
+     background: #D6936D;
 }
 
 .products__button-ice-cream{
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 90px;
     padding: 0;
     border: none;
+    @include table {
+            margin-top: 97px;
+        }
+                @include disktop {
+                    margin-top: 90px;
+                    margin-bottom: 60px;
+                }
 }
-
 .products__button-coffee{
-    margin-top: 35px;
-        margin-bottom: 20px;
+    margin-top: 55px;
         padding: 0;
         border: none;
+        @include table {
+                margin-top: 50px;
+            }
+        @include disktop {
+         margin-top: 70px;
+         margin-bottom: 60px;
+                         }
+
 }
 .products__button-milkshakes{
-    margin-top: 60px;
-        margin-bottom: 20px;
+    margin-top: 90px;
         padding: 0;
         border: none;
+        @include table {
+            margin-top: 75px;
+            }
+            @include disktop {
+             margin-top: 66px;
+             margin-bottom: 60px;
+                         }
 
 }
 
 .products__ice-cream-modal-icon,
 .products__coffee-modal-icon,
 .products__milkshakes-modal-icon
-{
+{   transition: transform 250ms cubic-bezier;
+    transform: scale(1);
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -192,6 +248,22 @@ font-family: 'Montserrat';
         cursor: pointer;
         background-color:#AEC6A5;
 }
+
+.products__ice-cream-modal-icon:hover,
+.products__coffee-modal-icon:hover,
+.products__milkshakes-modal-icon:hover
+{
+transform: scale(1.2);
+transition: transform 250ms cubic-bezier;
+}
+.products__ice-cream-modal-icon:focus,
+.products__coffee-modal-icon:focus,
+.products__milkshakes-modal-icon:focus {
+transform: scale(1.5);
+transition: transform 250ms cubic-bezier;
+}
+
+
 .products__coffee-modal-icon{
     background-color:#EFD478;
 }
