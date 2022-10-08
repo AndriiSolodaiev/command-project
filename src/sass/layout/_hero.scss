@@ -1,8 +1,10 @@
 .hero {
+    height: 442px;
     background: #84A178;
 }
 
 .hero__title {
+    padding-top: 50px;
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 26px;
@@ -24,6 +26,9 @@
 
 .hero__anchors {
     display: flex;
+    // align-items: flex-end;
+    margin-top: 32px;
+
 }
 
 .hero__wrapper {
@@ -36,6 +41,16 @@
 }
 
 .hero__products {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
     width: 62px;
     height: 24px;
     border: 2px solid #F8D24E;
@@ -43,6 +58,10 @@
 }
 
 .hero__made {
+    margin-left: 8px;
+    width: 83px;
+    height: 24px;
+    border: 0;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 8px;
@@ -55,9 +74,9 @@
 }
 
 .hero__dots-img {
-    display: block;
-    z-index: 100;
-    // position: absolute;
+    // display: block;
+    // z-index: 100;
+    position: absolute;
     width: 328px;
     background-image: url(../images/mobil-dots-bgr.png);
     background-position: 50% 50%;
