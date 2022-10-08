@@ -1,0 +1,200 @@
+@mixin mobile {
+    @media screen and (min-width:480px) {
+        @content;
+    }
+}
+
+
+@mixin table {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+
+@mixin disktop {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+
+@mixin retina {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+
+}
+.conteiner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/products/icebackground-tell.png);
+    
+    @include retina {
+            background-image: url(/src/images/products/icebackground-tell-2x.png);
+        }
+                @include table {
+                    background-image: url(/src/images/products/icebackground-tab.jpg);
+                    @include retina{
+                        background-image: url(/src/images/products/icebackground-tab-2x.jpg)
+                    }
+}
+ @include disktop{
+    background-image: url(/src/images/products/icebackground-desk.jpg);
+    @include retina {
+        background-image: url(/src/images/products/icebackground-desk-2x.jpg)
+ }
+}
+}
+
+.products__title{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: #131313;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.products__pre-title{
+font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 1.26;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #131313;
+justify-content: center;
+align-items: center;
+margin-top: 12px;
+margin-bottom: 40px;
+}
+
+.products__foto{
+justify-content: center;
+align-items: center;
+text-align: center;
+display: flex;
+margin: 0 auto;
+}
+.products__list{
+    display: block;
+    margin: 0px 20px 56px 20px;
+    width: 100%;
+    width: 280px;
+    height: 528px;
+}
+.products__information-title{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+}
+.products__description{
+    margin-top: 40px;
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+.products__information-icecream{
+        width: 280px;
+        height: 420px;
+        background: #AEC6A5;
+        border-radius: 24px;
+        padding-left: 53px;
+        padding-top: 123px;
+        padding-bottom: 20px;
+        padding-right: 53px;
+        text-align: center;
+        line-height: 1.8;
+        margin-top: -128px;
+}
+.products__information-icecoffee {
+    width: 280px;
+    height: 420px;
+    background: #EFD478;
+    border-radius: 24px;
+    padding-left: 53px;
+    padding-top: 123px;
+    padding-bottom: 20px;
+    padding-right: 53px;
+    text-align: center;
+    line-height: 1.8;
+    margin-top:-128px;
+}
+.products__information-milkshakes {
+    width: 280px;
+        height: 420px;
+        background: #D6936D;
+        border-radius: 24px;
+        padding-left: 53px;
+        padding-top: 123px;
+        padding-bottom: 20px;
+        padding-right: 53px;
+        text-align: center;
+        line-height: 1.8;
+        margin-top: -128px;
+}
+
+.products__button-ice-cream{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
+.products__button-coffee{
+    margin-top: 35px;
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+}
+.products__button-milkshakes{
+    margin-top: 60px;
+        margin-bottom: 20px;
+        padding: 0;
+        border: none;
+
+}
+
+.products__ice-cream-modal-icon,
+.products__coffee-modal-icon,
+.products__milkshakes-modal-icon
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+        height: 15px;
+        padding: 0 auto;
+        margin: 0 auto;
+        cursor: pointer;
+        background-color:#AEC6A5;
+}
+.products__coffee-modal-icon{
+    background-color:#EFD478;
+}
+.products__milkshakes-modal-icon{
+    background-color: #D6936D;
+}
