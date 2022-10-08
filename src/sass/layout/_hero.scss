@@ -12,6 +12,12 @@
     color: #FCFCFC;
 }
 
+.title-36px {
+    font-size: 34px;
+    letter-spacing: 0;
+
+}
+
 .hero__points-of-sale {
     display: none;
 }
@@ -53,7 +59,7 @@
     z-index: 100;
     // position: absolute;
     width: 328px;
-    background-image: url(../../images/mobil-dots-bgr.png);
+    background-image: url(../images/mobil-dots-bgr.png);
     background-position: 50% 50%;
 }
 
