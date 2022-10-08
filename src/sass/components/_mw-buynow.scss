@@ -45,14 +45,16 @@
     display: block;
     width: 100%;
     height: 32px;
-    margin-bottom: 16px;
-    padding-left: 16px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     transition: fill var(--transition-prop), border var(--transition-prop);
     background: var(--input-bg-color);
     border: 1px solid var(--base-bg-color);
     border-radius: 10px;
     &::placeholder {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 140%;
     }
 }
@@ -64,28 +66,29 @@
     border: 1px solid var(--base-bg-color);
     background: var(--input-bg-color);
     border-radius: 10px;
-    margin-bottom: 32px;
-    padding: 12px 16px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     transition: border var(--transition-prop);
-
     &::placeholder {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 140%;
     }
 }
+.buy-now-menu__icon-close {
+    width: 16px;
+    height: 16px;
+}
 
 .buy-now-menu__btn-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
+    background-color: transparent;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
     border: none;
-    transition: fill var(--transition-prop);
+    padding: 0px;
+    line-height: 0px;
 }
 
 textarea {
@@ -236,6 +239,7 @@ textarea {
         width: 100%;
         max-width: 568px;
         height: 644px;
+        padding-top: 32px;
     }
     .buy-now-menu__list {
         flex-direction: row;
@@ -244,9 +248,35 @@ textarea {
     }
     .buy-now-menu__form-input {
         height: 42px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        &::placeholder {
+            font-size: 14px;
+            }
+
     }
     .buy-now-menu__form-comment {
         height: 84px;
+        margin-bottom: 32px;
+        padding-left: 16px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        &::placeholder {
+            font-size: 14px;
+            }
+    }
+    .buy-now-menu__heading {
+        margin-bottom: 40px;
+    }
+    .buy-now-menu__icon-close {
+        width: 20px;
+        height: 20px;
+    }
+    .buy-now-menu__btn-close {
+        top: 18px;
+        right: 18px;
     }
 }
 
