@@ -32,7 +32,10 @@ img {
 
 button {
     font-family: inherit;
-    cursor: pointer;
+    cursor: url('../images/img-desktop/cursor.png'), pointer;
+}
+a {
+    cursor: url('../images/img-desktop/cursor.png'), pointer;
 }
 body {
     font-family: var(--primary-font);
