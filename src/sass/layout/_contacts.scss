@@ -1,0 +1,67 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.contacts-list {
+    background: #FFFFFF;
+    padding: 40px;
+    margin-right: auto;
+    border: 1px solid #E1E1E1;
+    margin-bottom: 20px;
+    width: 368px;
+    height: 538px;
+    border-radius: 24px;
+}
+
+.contacts__title {
+    width: 75px;
+    height: 28px;
+    background: var(--accent-color);
+    border-radius: 6px;
+    text-align: center;
+    font-family: Monserrat;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 4%;
+    color: var(--text-color_dark);
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.contacts__name {
+    width: 138px;
+    height: 28px;
+    background: var(--accent-color);
+    border-radius: 6px;
+    text-align: center;
+    font-family: Monserrat;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 4%;
+    color: var(--text-color_dark);
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.contacts__city {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 4%;
+    margin-bottom: 8px;
+}
+
+.contacts__link {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-color_address);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    text-decoration: underline;
+    color: var(--text-color_address);
+ }
