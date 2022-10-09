@@ -112,19 +112,19 @@ margin: 0 auto;
     border-radius: 24px;
     display: block;
     width: 280px;
-    height: 528px;
+    min-height: 528px;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     @include table {
             width: 224px;
-            height: 482px;
+            min-height: 482px;
             margin: 0 auto;
         }     
                  @include disktop {
                      width: 370px;
-                     height: 718px;
+                     max-height: 718px;
                     //  margin: 0 auto;
                  }
 }
@@ -197,11 +197,11 @@ background: #AEC6A5;
     padding: 0;
     border: none;
     @include table {
-            margin-top: 97px;
+            margin-top: 99.5px;
         }
-                @include disktop {
-                    margin-top: 90px;
-                    margin-bottom: 60px;
+    @include disktop {
+    margin-top: 85px;
+     margin-bottom: 60px;
                 }
 }
 .products__button-coffee{
@@ -212,7 +212,7 @@ background: #AEC6A5;
                 margin-top: 50px;
             }
         @include disktop {
-         margin-top: 70px;
+         margin-top: 60px;
          margin-bottom: 60px;
                          }
 
@@ -225,10 +225,9 @@ background: #AEC6A5;
             margin-top: 75px;
             }
             @include disktop {
-             margin-top: 66px;
+             margin-top: 60px;
              margin-bottom: 60px;
                          }
-
 }
 
 .products__ice-cream-modal-icon,
