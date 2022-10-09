@@ -38,6 +38,11 @@
   }
 }
 
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 394px;
+  }
+
 .slider {
   margin-left: auto;
   margin-right: auto;
@@ -113,6 +118,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 383px;
+  }
   .slider {
     width: 705px;
   }
@@ -144,6 +153,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 128px;
+    padding-bottom: 197px;
+  }
   .slider {
     width: 968px;
   }
