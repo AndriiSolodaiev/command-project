@@ -10,6 +10,8 @@ font-size: 18px;
 line-height: 1.22;
 text-transform: uppercase;
 color: #FCFCFC;
+margin-top: 39px;
+width: 232px;
 }
 
 .footer_name-second {
@@ -20,6 +22,8 @@ line-height: 1.2;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FCFCFC;
+width: 200px;
+margin-top: 16px;
 }
 
 .footer_social-list {
@@ -29,21 +33,27 @@ color: #FCFCFC;
    column-gap: 27px;
    padding-top: 42px;
    padding-bottom: 38px;
+   
 }
 
-// .footer_social-link {
+.footer_social-link {
+   fill: #84A178;;
+   border-radius: 50%;
+   width: 34px;
+   height: 34px;
+}
    
-// }
+.footer_icon-box {
+background-color: #F8D24E;
+
+}
 
 .footer_contact-box {
-    display: flex;
-    justify-content: right;
-    align-items: center;
     margin-bottom: 40px;
 }
 
  .footer_contacts {
-    justify-content: right;
+  text-align: right;
  }
 
 .footer_phone-color {
@@ -63,7 +73,9 @@ color: #FCFCFC;
     border-top: 1px solid #E1E1E1;
     padding-top: 16px;
     padding-bottom: 62px;
+    width: 100%;
 }
+
 
 // .container {
 //     padding-left: 15px;
@@ -74,19 +86,72 @@ color: #FCFCFC;
 //   }
   
   @media screen and (min-width: 480px) {
-    // .container {
-    //   width: 480px;
-    // }
+   
   }
   
   @media screen and (min-width: 768px) {
-    // .container {
-    //   width: 768px;
-    // }
+    .footer_name-first {
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+      margin-top: 40px;
+      width: 352px;
+      }
+
+      .footer_name-second {
+        font-size: 48px;
+        line-height: 1.23;
+        letter-spacing: 0.06em;
+        width: 340px;
+        margin-top: 9px;
+        }
+       
+
+
+        .footer_circulation {
+         line-height: 186%;
+          letter-spacing: 0.02em;
+          padding-top: 14px;
+          padding-bottom: 13px;
+          width: 100%;
+      }
+
+      .footer_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      margin-bottom: 54px;
+      }
   }
   
   @media screen and (min-width: 1200px) {
-    // .container {
-    //   width: 1200px;
-    // }
+    .footer_name-first {
+      font-weight: 400;
+      font-size: 30px;
+      margin-top: 120px;
+      width: 504px;
+      }
+      .footer_name-second {
+        font-size: 58px;
+        width: 497px;
+        margin-top: 14px;
+        }
+        // .footer_box {
+        //   display: flex;
+        //   justify-content: space-between;
+        //   align-items: flex-end;
+        // margin-bottom: 54px;
+        // }
+        
+
+
+        .footer_circulation {
+          margin: 0 auto;
+          font-size: 12px;
+           padding-top: 12px;
+           padding-bottom: 11px;
+           width: 1167px;
+       }
+
+       
   }
