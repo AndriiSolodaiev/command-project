@@ -244,7 +244,6 @@ background: #AEC6A5;
         height: 15px;
         padding: 0 auto;
         margin: 0 auto;
-        cursor: pointer;
         background-color:#AEC6A5;
 }
 
@@ -252,6 +251,7 @@ background: #AEC6A5;
 .products__coffee-modal-icon:hover,
 .products__milkshakes-modal-icon:hover
 {
+    
 transform: scale(1.2);
 transition: transform 250ms cubic-bezier;
 }
