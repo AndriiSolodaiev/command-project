@@ -81,24 +81,26 @@
   line-height: 1.9;
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 14px;
   color: #131313;
 }
 
 // -----стилі dots---//
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  // color: #84a178;
+  color: #84a178;
 }
-
-.slick-dots {
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 1.7;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    
+    -webkit-font-smoothing: antialiased;}
 
 .slick-prev:before,
 .slick-next:before {
@@ -116,6 +118,8 @@
 .slick-next {
   right: 0;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .reviews {
@@ -149,6 +153,8 @@
   .slider__name-client {
     font-size: 16px;
     margin-top: 32px;
+    margin-bottom: 30px;
+  
   }
 }
 
