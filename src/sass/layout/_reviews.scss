@@ -1,0 +1,144 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+// .reviews {
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-image: url(/src/images/products/icebackground-tell.png);
+
+//   @include retina {
+//     background-image: url(/src/images/products/icebackground-tell-2x.png);
+//   }
+//   @include table {
+//     background-image: url(/src/images/products/icebackground-tab.jpg);
+//     @include retina {
+//       background-image: url(/src/images/products/icebackground-tab-2x.jpg);
+//     }
+//   }
+//   @include disktop {
+//     background-image: url(/src/images/products/icebackground-desk.jpg);
+//     @include retina {
+//       background-image: url(/src/images/products/icebackground-desk-2x.jpg);
+//     }
+//   }
+// }
+
+.reviews__container {
+  background-color: #fff;
+}
+
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 280px;
+}
+
+.slider__img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.slider__description {
+  height: 256px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 39px;
+  padding-right: 39px;
+  background-color: #84a178;
+  border-radius: 10px;
+}
+
+.slider__text {
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.slider__name-client {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.9;
+  text-align: center;
+  margin-top: 30px;
+  color: #131313;
+}
+
+// -----стилі dots---//
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #84a178;
+}
+
+.slick-dots {
+  margin-top: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    width: 705px;
+  }
+
+  .slider__img {
+    margin-bottom: 28px;
+  }
+
+  .slider__description {
+    height: 138px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 24px;
+  }
+
+  .slider__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+
+  .slider__name-client {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider {
+    width: 968px;
+  }
+
+  .slider__img {
+    margin-bottom: 32px;
+  }
+
+  .slider__description {
+    padding-top: 39px;
+    padding-bottom: 47px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+
+  .slider__text {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+  }
+}
