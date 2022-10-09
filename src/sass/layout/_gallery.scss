@@ -2,10 +2,6 @@
 //   margin-bottom: 80px;
 // }
 
-// .gallery__container {
-  
-//   // background-color: #fff;
-// }
 // .gallery {
 //   margin-top: -93px;
 // }
@@ -19,17 +15,14 @@
 }
 .slider-gallery__img {
   width: 279px;
-  // width: 100%;
   text-align: center;
   height: 130.03px;
-  margin-top: -93px;
+  // margin-top: -93px;
   border-radius: 7.40681px;
 }
 
 @media screen and (min-width: 768px) {
   .slider-gallery__img {
-    display: flex;
-    justify-content: center;
     width: 704px;
     height: 327px;
     border-radius: 18px;

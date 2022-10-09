@@ -1,35 +1,47 @@
-.reviews, .gallery {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/src/images/products/icebackground-tell.png);
+.reviews,
+.gallery {
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
 
-  @include retina {
+  background-image: url(/src/images/products/icebackground-tell.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: url(/src/images/products/icebackground-tell-2x.png);
   }
-  @include table {
-    background-image: url(/src/images/products/icebackground-tab.jpg);
-    @include retina {
-      background-image: url(/src/images/products/icebackground-tab-2x.jpg);
-    }
-  }
-  @include disktop {
-    background-image: url(/src/images/products/icebackground-desk.jpg);
-    @include retina {
-      background-image: url(/src/images/products/icebackground-desk-2x.jpg);
-    }
-  }
-}
 
-.reviews__container {
- 
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    background-image: url(/src/images/products/icebackground-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(/src/images/products/icebackground-tab-2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: url(/src/images/products/icebackground-desk.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(/src/images/products/icebackground-desk-2x.jpg);
+  }
 }
 
 .slider {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  // padding-bottom: 100px;
   width: 280px;
 }
 
@@ -73,15 +85,14 @@
   // color: #84a178;
 }
 
- 
-  .slick-dots {
-    bottom: -25px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
+.slick-dots {
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .slick-prev:before,
