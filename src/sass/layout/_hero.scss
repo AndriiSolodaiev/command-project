@@ -2,20 +2,20 @@
     min-width: 320px;
     max-height: 454px;
     width: 100%;
-    background: #84A178;
+    background: var(--base-bg-color);
 }
 
 .hero__title {
     text-align: left;
     max-width: 340px;
     padding-top: 50px;
-    font-family: 'Seymour One';
+    font-family: var(--title-font);
     font-weight: 400;
     font-size: 26px;
     line-height: 33px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--text-color_light);
 }
 
 
@@ -55,7 +55,7 @@
 }
 
 .hero__products {
-    font-family: 'Montserrat';
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
@@ -64,11 +64,26 @@
     align-items: center;
     text-align: center;
     text-decoration-line: none;
-    color: #131313;
+    color: var(--text-color_dark);
     width: 62px;
     height: 24px;
-    border: 2px solid #F8D24E;
+    border: 2px solid var(--accent-color);
     border-radius: 8px;
+
+    &:hover {
+        border: 2px solid var(--mdl-btn-color_hover);
+        transition-duration: var(--transition-prop);
+    }
+
+    &:disabled {
+        border: 2px solid var(--mdl-btn-color_disabled);
+    }
+
+    &:focus {
+        border: 2px solid var(--mdl-btn-color_hover);
+        transition-duration: var(--transition-prop);
+        color: var(--text-color_light);
+    }
 }
 
 .hero__made {
@@ -76,7 +91,7 @@
     width: 83px;
     height: 24px;
     border: 0;
-    font-family: 'Montserrat';
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
@@ -84,7 +99,21 @@
     align-items: center;
     text-align: center;
     text-decoration-line: underline;
-    color: #F8D24E;
+    color: var(--accent-color);
+
+    &:hover {
+        color: var(--mdl-btn-color_hover);
+        transition-duration: var(--transition-prop);
+    }
+
+    &:disabled {
+        color: var(--mdl-btn-color_disabled);
+    }
+
+    &:focus {
+        color: var(--text-color_light);
+        transition-duration: var(--transition-prop);
+    }
 }
 
 .hero__wrapper-img {
@@ -125,7 +154,7 @@
     .hero {
         max-height: 454px;
         width: 100%;
-        background: #84A178;
+        background: var(--base-bg-color);
     }
 }
 
@@ -144,19 +173,18 @@
 
     .hero {
         height: 360px;
-        // background: #84A178;
     }
 
     .hero__title {
         max-width: 182px;
         padding-top: 39px;
-        font-family: 'Seymour One';
+        font-family: var(--title-font);
         font-weight: 400;
         font-size: 18.25px;
         line-height: 23px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FCFCFC;
+        color: var(--text-color_light);
     }
 
     .title-36px {
@@ -172,25 +200,25 @@
 
     .hero__points-of-sale-amount {
         display: block;
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 900;
         font-size: 28px;
         line-height: 34px;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #131313;
+        color: var(--text-color_dark);
     }
 
     .hero__points-of-sale-type {
         display: block;
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 400;
         font-size: 8px;
         line-height: 10px;
         text-align: right;
         margin-top: 4px;
-        color: #FCFCFC;
+        color: var(--text-color_light);
     }
 
     .hero__anchors {
@@ -234,11 +262,11 @@
 
     .hero__plate-descr {
         width: 151px;
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 400;
         font-size: 12px;
         line-height: 140%;
-        color: #FCFCFC;
+        color: var(--text-color_light);
     }
 
     .hero__plate-img {
@@ -277,7 +305,7 @@
         max-width: 367px;
         letter-spacing: .04em;
         text-transform: uppercase;
-        color: #fcfcfc;
+        color: var(--text-color_light);
         padding-top: 39px;
         font-family: Seymour One;
         font-size: 38px;
@@ -301,7 +329,7 @@
 
 
     .hero__products {
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 600;
         font-size: 14px;
         line-height: 48px;
@@ -310,30 +338,12 @@
         align-items: center;
         text-align: center;
 
-        color: #131313;
+        color: var(--text-color_dark);
         width: 134px;
         height: 42px;
-        border: 2px solid #F8D24E;
+        border: 2px solid var(--accent-color);
         border-radius: 8px;
-
-
-        &:hover {
-            border: 2px solid #4ef8ac;
-            transition-duration: 3000ms;
-        }
-
-        &:disabled {
-            border: 2px solid #f84ec8;
-        }
-
-        &:focus {
-            border: 2px solid #4ef8ac;
-            color: #FCFCFC;
-        }
     }
-
-
-
 
 
     .hero__made {
@@ -341,7 +351,7 @@
         width: 111px;
         height: 24px;
         border: 0;
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
@@ -349,19 +359,7 @@
         align-items: center;
         text-align: center;
         text-decoration-line: underline;
-        color: #F8D24E;
-
-        &:hover {
-            color: #4ef8ac;
-        }
-
-        &:disabled {
-            color: #f84ec8;
-        }
-
-        &:focus {
-            color: #FCFCFC;
-        }
+        color: var(--accent-color);
     }
 
 
@@ -377,11 +375,11 @@
     .hero__plate-descr {
         padding-top: 30px;
         width: 200px;
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 400;
         font-size: 14px;
         line-height: 140%;
-        color: #FCFCFC;
+        color: var(--text-color_light);
     }
 
     .hero__plate-img {
@@ -398,7 +396,6 @@
         z-index: 1;
         bottom: 0;
         position: absolute;
-        // position: relative;
         margin-left: -20px;
         width: 1200px;
 
@@ -422,22 +419,22 @@
 
 
     .hero__points-of-sale-amount {
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 900;
         font-size: 46px;
         line-height: 56px;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #131313;
+        color: var(--text-color_dark);
     }
 
     .hero__points-of-sale-type {
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         text-align: right;
-        color: #FCFCFC;
+        color: var(--text-color_light);
     }
 }

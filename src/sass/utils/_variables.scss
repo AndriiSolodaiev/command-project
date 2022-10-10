@@ -5,11 +5,13 @@
     --input-bg-color: rgba(248, 210, 78, 0.1);
     --text-color_dark: #131313;
     --text-color_light: #FCFCFC;
-    --text-color_address:#D6936D;
-    --text-color_schedule:#907E82;
-    --mdl-btn-color_hover:#0A8817;
-    --mdl-btn-color_disabled:#ABABAB;
+    --text-color_address: #D6936D;
+    --text-color_schedule: #907E82;
+    --mdl-btn-color_hover: #0A8817;
+    --mdl-btn-color_disabled: #ABABAB;
 
     --primary-font: 'Montserrat', sans-serif;
-    --title-font: 'Seymour One',sans-serif;
+    --title-font: 'Seymour One', sans-serif;
+
+    --transition-prop: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
