@@ -167,7 +167,6 @@
     .hero__wrapper {
         justify-content: space-between;
         display: flex;
-        z-index: 30;
         position: relative;
     }
 
@@ -227,7 +226,6 @@
     }
 
     .hero__dots-img {
-        z-index: 1;
         bottom: 0;
         position: absolute;
         margin-left: -20px;
@@ -248,11 +246,9 @@
         width: 379px;
         margin-left: auto;
         background-repeat: no-repeat;
-        z-index: 10;
     }
 
     .hero__plate-container {
-        z-index: 50;
         position: relative;
         margin-top: 34px;
         display: flex;
@@ -270,6 +266,7 @@
     }
 
     .hero__plate-img {
+        z-index: 1;
         height: 152px;
         width: 152px;
         margin-right: 33px;
@@ -289,7 +286,6 @@
     .hero__wrapper {
         justify-content: space-between;
         display: flex;
-        z-index: 30;
         position: relative;
     }
 
@@ -364,7 +360,6 @@
 
 
     .hero__plate-container {
-        z-index: 50;
         position: relative;
         margin-top: 41px;
         display: flex;
@@ -383,6 +378,7 @@
     }
 
     .hero__plate-img {
+        z-index: 1;
         height: 225px;
         width: 225px;
         margin-right: 14px;
@@ -393,7 +389,6 @@
     }
 
     .hero__dots-img {
-        z-index: 1;
         bottom: 0;
         position: absolute;
         margin-left: -20px;
@@ -414,7 +409,6 @@
         width: 642px;
         margin-left: auto;
         background-repeat: no-repeat;
-        z-index: 10;
     }
 
 
