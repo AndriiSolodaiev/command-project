@@ -6,6 +6,7 @@
 }
 
 .hero__title {
+    text-align: left;
     max-width: 340px;
     padding-top: 50px;
     font-family: 'Seymour One';
@@ -314,7 +315,26 @@
         height: 42px;
         border: 2px solid #F8D24E;
         border-radius: 8px;
+
+
+        &:hover {
+            border: 2px solid #4ef8ac;
+            transition-duration: 3000ms;
+        }
+
+        &:disabled {
+            border: 2px solid #f84ec8;
+        }
+
+        &:focus {
+            border: 2px solid #4ef8ac;
+            color: #FCFCFC;
+        }
     }
+
+
+
+
 
     .hero__made {
         margin-left: 34px;
@@ -330,6 +350,18 @@
         text-align: center;
         text-decoration-line: underline;
         color: #F8D24E;
+
+        &:hover {
+            color: #4ef8ac;
+        }
+
+        &:disabled {
+            color: #f84ec8;
+        }
+
+        &:focus {
+            color: #FCFCFC;
+        }
     }
 
 
