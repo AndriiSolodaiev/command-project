@@ -1,11 +1,8 @@
-body {
-    min-width: 320px;
-}
-
-
 .hero {
-    max-height: 442px;
+    min-width: 320px;
+    max-height: 454px;
     width: 100%;
+    background: #84A178;
 }
 
 .hero__title {
@@ -19,6 +16,7 @@ body {
     text-transform: uppercase;
     color: #FCFCFC;
 }
+
 
 .title-36px {
     font-size: 34px;
@@ -125,6 +123,14 @@ body {
     display: none;
 }
 
+@media screen and (min-width: 480px) {
+    .hero {
+        max-height: 454px;
+        width: 100%;
+        background: #84A178;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .hero__wrapper-img {
         position: relative;
@@ -140,7 +146,7 @@ body {
 
     .hero {
         height: 360px;
-        background: #84A178;
+        // background: #84A178;
     }
 
     .hero__title {
