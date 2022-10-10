@@ -56,8 +56,6 @@
 
 .products__cards{
     display: block;
-    // display: flex;
-    // flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
     width: 100%;
@@ -70,6 +68,13 @@
                      display: flex;
                      gap: 33px;
                  }
+}
+.products__container{
+    
+            max-width: 1200px;
+                justify-content: center;
+                margin: 0 auto;
+            
 }
 .products__title{
     font-weight: 800;
@@ -107,6 +112,7 @@ margin: 0 auto;
     height: 318px;
 }
 }
+
 .products__list{
     margin-bottom: 50px;
     border-radius: 24px;
@@ -139,6 +145,10 @@ margin: 0 auto;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #131313;
+@include disktop {
+        margin-top: 30px;
+    }
+    
 }
 .products__description{
     margin-top: 40px;
@@ -244,7 +254,6 @@ background: #AEC6A5;
         height: 15px;
         padding: 0 auto;
         margin: 0 auto;
-        cursor: pointer;
         background-color:#AEC6A5;
 }
 
@@ -252,6 +261,7 @@ background: #AEC6A5;
 .products__coffee-modal-icon:hover,
 .products__milkshakes-modal-icon:hover
 {
+    
 transform: scale(1.2);
 transition: transform 250ms cubic-bezier;
 }
