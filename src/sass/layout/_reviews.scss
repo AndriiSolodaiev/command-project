@@ -1,51 +1,51 @@
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.reviews,
+.gallery {
+  width: 100%;
+  background-image: url(/src/images/products/icebackground-tell.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(/src/images/products/icebackground-tell-2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/products/icebackground-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(/src/images/products/icebackground-tab-2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(/src/images/products/icebackground-desk.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(/src/images/products/icebackground-desk-2x.jpg);
+  }
 }
 
-// .reviews {
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-image: url(/src/images/products/icebackground-tell.png);
-
-//   @include retina {
-//     background-image: url(/src/images/products/icebackground-tell-2x.png);
-//   }
-//   @include table {
-//     background-image: url(/src/images/products/icebackground-tab.jpg);
-//     @include retina {
-//       background-image: url(/src/images/products/icebackground-tab-2x.jpg);
-//     }
-//   }
-//   @include disktop {
-//     background-image: url(/src/images/products/icebackground-desk.jpg);
-//     @include retina {
-//       background-image: url(/src/images/products/icebackground-desk-2x.jpg);
-//     }
-//   }
-// }
-
-.reviews__container {
-  background-color: #fff;
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 394px;
 }
 
-.slider {
+.slider-reviews {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 280px;
 }
 
-.slider__img {
+.slider-reviews__img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -53,30 +53,31 @@
   margin-bottom: 32px;
 }
 
-.slider__description {
+.slider-reviews__description {
   height: 256px;
   padding-top: 34px;
   padding-bottom: 34px;
   padding-left: 39px;
   padding-right: 39px;
-  background-color: #84a178;
+  background-color: var(--base-bg-color);
   border-radius: 10px;
 }
 
-.slider__text {
+.slider-reviews__text {
   font-size: 12px;
   line-height: 2.6;
   text-align: center;
-  color: #fcfcfc;
+  color: var(--text-color_light);
 }
 
-.slider__name-client {
+.slider-reviews__name-client {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.9;
   text-align: center;
   margin-top: 30px;
-  color: #131313;
+  margin-bottom: 14px;
+  color: var(--text-color_dark);
 }
 
 // -----стилі dots---//
@@ -84,21 +85,50 @@
   opacity: 0.75;
   color: #84a178;
 }
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 1.7;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
 
-.slick-dots {
-  margin-top: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .slider {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 383px;
+  }
+  .slider-reviews {
     width: 705px;
   }
 
-  .slider__img {
+  .slider-reviews__img {
     margin-bottom: 28px;
   }
 
-  .slider__description {
+  .slider-reviews__description {
     height: 138px;
     padding-top: 29px;
     padding-bottom: 28px;
@@ -107,36 +137,41 @@
     border-radius: 24px;
   }
 
-  .slider__text {
+  .slider-reviews__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.04em;
   }
 
-  .slider__name-client {
+  .slider-reviews__name-client {
     font-size: 16px;
     margin-top: 32px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .slider {
+  .reviews {
+    padding-top: 128px;
+    padding-bottom: 197px;
+  }
+  .slider-reviews {
     width: 968px;
   }
 
-  .slider__img {
+  .slider-reviews__img {
     margin-bottom: 32px;
   }
 
-  .slider__description {
+  .slider-reviews__description {
     padding-top: 39px;
     padding-bottom: 47px;
     padding-left: 109px;
     padding-right: 109px;
   }
 
-  .slider__text {
+  .slider-reviews__text {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.04em;
