@@ -16,11 +16,39 @@
       information. We appreciate your patience.
     </p>
     <form class="franchise-modal__form">
-      <input class="franchise-modal__input" placeholder="Name" type="text" />
-      <input class="franchise-modal__input" placeholder="Phone" type="tel" />
-      <input class="franchise-modal__input" placeholder="Email" type="text" />
-      <textarea placeholder="Comment" class="franchise-modal__comment"></textarea>
-      <button type="submit" class="main-button-filled">Submit</button>
+      <input
+        class="franchise-modal__input"
+        placeholder="Name"
+        type="text"
+        required
+        name="franchise-request-user"
+        minlength="3"
+        pattern="[a-zA-Z]+"
+      />
+      <input
+        class="franchise-modal__input"
+        placeholder="Phone"
+        type="tel"
+        required
+        name="franchise-request-tel"
+        pattern="[0-9]{10}"
+        title="xxx-xxx-xx-xx"
+      />
+      <input
+        class="franchise-modal__input"
+        placeholder="Email"
+        type="text"
+        minlength="5"
+        required
+        name="franchise-request-mail"
+      />
+      <textarea
+        placeholder="Comment"
+        class="franchise-modal__comment"
+      ></textarea>
+      <button type="submit" class="main-button-filled submit-button">
+        Submit
+      </button>
     </form>
   </div>
 </div>
