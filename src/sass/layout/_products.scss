@@ -40,16 +40,25 @@
     @include retina {
             background-image: url(/src/images/products/icebackground-tell-2x.png);
         }
+                 @include retina {
+                     background-image: url(/src/images/products/icebackground-tell.webp);
+                 }
                 @include table {
                     background-image: url(/src/images/products/icebackground-tab.jpg);
                     @include retina{
                         background-image: url(/src/images/products/icebackground-tab-2x.jpg)
                     }
+                         @include retina {
+                             background-image: url(/src/images/products/icebackground-tab.webp)
+                         }
 }
  @include disktop{
     background-image: url(/src/images/products/icebackground-desk.jpg);
     @include retina {
         background-image: url(/src/images/products/icebackground-desk-2x.jpg)
+ }
+ @include retina {
+     background-image: url(/src/images/products/icebackground-desk.webp)
  }
 }
 }
@@ -202,42 +211,71 @@ background: #AEC6A5;
      background: #D6936D;
 }
 
-.products__button-ice-cream{
+.products__button-ice-cream {
+    background-color: transparent;
+    outline: none;
     margin-top: 90px;
     padding: 0;
     border: none;
+
     @include table {
-            margin-top: 99.5px;
-        }
+        margin-top: 99.5px;
+    }
+
     @include disktop {
-    margin-top: 85px;
-     margin-bottom: 60px;
-                }
+        margin-top: 85px;
+        margin-bottom: 60px;
+    }
 }
-.products__button-coffee{
+
+.products__button-ice-cream:focus {
+    transform: scale(1.5);
+    transition: transform 250ms cubic-bezier;
+}
+
+.products__button-coffee {
+    background-color: transparent;
+    outline: none;
     margin-top: 55px;
-        padding: 0;
-        border: none;
-        @include table {
-                margin-top: 50px;
-            }
-        @include disktop {
-         margin-top: 60px;
-         margin-bottom: 60px;
-                         }
+    padding: 0;
+    border: none;
+
+    @include table {
+        margin-top: 50px;
+    }
+
+    @include disktop {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 
 }
-.products__button-milkshakes{
+
+.products__button-coffee:focus {
+    transform: scale(1.5);
+    transition: transform 250ms cubic-bezier;
+}
+
+.products__button-milkshakes {
+    background-color: transparent;
+    outline: none;
     margin-top: 90px;
-        padding: 0;
-        border: none;
-        @include table {
-            margin-top: 75px;
-            }
-            @include disktop {
-             margin-top: 60px;
-             margin-bottom: 60px;
-                         }
+    padding: 0;
+    border: none;
+
+    @include table {
+        margin-top: 75px;
+    }
+
+    @include disktop {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.products__button-milkshakes:focus {
+    transform: scale(1.5);
+    transition: transform 250ms cubic-bezier;
 }
 
 .products__ice-cream-modal-icon,
