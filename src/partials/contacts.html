@@ -98,9 +98,12 @@
      </ul>
         <ul class="contacts-button list">
           <li class="contacts-button-location">
-           <button type="button" class="main-button-filled"
+           <button type="button" class="location__btn main-button-filled"
               location-modal-open>
-             Our Locations >
+             Our Locations
+            <svg class="location__btn-icon">
+                <use href="./images/sprite.svg#btn-arrow"></use>
+            </svg>
             </button>
           </li>
           
@@ -112,19 +115,4 @@
 
 </section>
 
-<div class="backdrop is-hidden" location-modal>
-    <div class="modal">
-        <button type="button" class="modal__close-button" location-modal-close>
-            <svg class="modal__close-icon">
-                <use href="./images/sprite.svg#cross"></use>
-            </svg>
-        </button>
-        <p class="modal__location-title">Our Locations</p>
-        <img src="./images/img-desktop/map-desktop.jpg" alt="Map"/>
-    
-        <p>
-        <a href="https://maps.google.com" class="modal__location-button link">Open map</a>
-        </p>
-        
-    </div>
-</div>
+
