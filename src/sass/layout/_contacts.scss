@@ -21,9 +21,8 @@
             width: 80px;
             height: 16px;
             background: var(--accent-color);
-            border-radius: 6px;
+            border-radius: 4px;
             text-align: center;
-            font-family: Monserrat;
             font-style: medium;
             font-size: 12px;
             line-height: 1.8;
@@ -39,7 +38,6 @@
             background: var(--accent-color);
             border-radius: 6px;
             text-align: center;
-            font-family: Monserrat;
             font-style: medium;
             font-size: 12px;
             line-height: 1.8;
@@ -120,7 +118,18 @@
             line-height: 1.5;
             color: var(--text-color_dark);
     }
+        .contacts-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 32px;
+        
+    }
 
+    .contacts-button-location {
+        margin-bottom: 16px;
+    }
 }
 
 
@@ -137,7 +146,7 @@
         background: #FFFFFF;
         padding: 40px 24px;
         margin-right: auto;
-        border: 1px solid #E1E1E1;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         margin-bottom: 20px;
         width: 224px;
         height: 538px;
@@ -151,7 +160,6 @@
             background: var(--accent-color);
             border-radius: 6px;
             text-align: center;
-            font-family: Monserrat;
             font-style: medium;
             font-size: 16px;
             line-height: 1.9;
@@ -167,7 +175,6 @@
             background: var(--accent-color);
             border-radius: 6px;
             text-align: center;
-            font-family: Monserrat;
             font-style: medium;
             font-size: 16px;
             line-height: 1.9;
@@ -250,6 +257,18 @@
             color: var(--text-color_dark);
     
         }
+
+        .contacts-button {
+             display: flex;
+             justify-content: center;
+             flex-direction: row;
+             margin-top: 60px;
+        
+    }
+
+        .contacts-button-location {
+            margin-right: 16px;
+    }
 }
 
 
@@ -259,14 +278,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
-         // margin-top: -100px;
+        //margin-top: -100px;
     }
 
     .contacts-list {
         background: #FFFFFF;
         padding: 40px;
         margin-right: auto;
-        border: 1px solid #E1E1E1;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         margin-bottom: 20px;
         width: 368px;
         height: 538px;
@@ -291,7 +310,6 @@
     background: var(--accent-color);
     border-radius: 6px;
     text-align: center;
-    font-family: Monserrat;
     font-style: medium;
     font-size: 16px;
     line-height: 1.9;
@@ -307,7 +325,6 @@
     background: var(--accent-color);
     border-radius: 6px;
     text-align: center;
-    font-family: Monserrat;
     font-style: medium;
     font-size: 16px;
     line-height: 1.9;
@@ -386,7 +403,17 @@
     color: var(--text-color_dark);
 
 }
+
+.contacts-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 64px;
+
 }
+}
+
+
 
 .modal {
     position: absolute;
@@ -397,6 +424,8 @@
     height: 458px;
     padding: 40px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
 }
 
 .modal__close-button {
@@ -416,3 +445,47 @@
     height: 20px;
     
 }
+
+.modal__location-title {
+    font-family: var(--title-font);
+    color: var(--text-color_dark);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.modal__location-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        align-items: stretch;
+        color: var(--text-color_dark);
+        padding: 12px 34px;
+        background-color: var(--accent-color);
+        border-radius: 10px;
+        height: 42px;
+        border: none;
+        margin-top: 32px;
+        transition: background-color var(--transition-prop), color var(--transition-prop);
+    
+        &:hover {
+            background-color: var(--mdl-btn-color_hover);
+        }
+    
+        &:focus {
+            background-color: var(--mdl-btn-color_hover);
+            color: var(--text-color_light);
+            outline: none;
+        }
+    
+        &:disabled {
+            background-color: #ABABAB;
+        }
+}
+

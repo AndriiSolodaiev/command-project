@@ -1,8 +1,8 @@
 <section id="contacts" class="contacts ">
    <div class="container">
       <h2 class="visually-hidden">Contacts</h2>
-     <div class="cards">
-      <div class="contacts-list">
+     <ul class="cards">
+      <li class="contacts-list list">
          <p class="contacts__title">CAFE</p>
 
          <p class="contacts__city">Chicago</p>
@@ -32,16 +32,16 @@
     
              <li> <a class="contact-social__tel link" href="tel:+610383766284 "> +61(0) 383 766 284 </a> </li>
           </ul>
-      </div>
+      </li>
 
-      <div class="contacts-list">   
+      <li class="contacts-list list">   
         
            <p class="contacts__name">FOOD TRUCK</p>
 
            <p class="contacts__city">Los Angeles</p>
 
            <address class="contacts__address">
-                <a class="contacts__link link" href="https://goo.gl/maps/ZpzvpjgbRSkDBHZi6" target="_blank">1003 Manhattan Ave, Manhattan</br> Beach, CA 90263, USA</a>
+                <a class="contacts__link link" href="https://goo.gl/maps/ZpzvpjgbRSkDBHZi6" target="_blank">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
            </address>
 
           <ul class="contacts-page list">
@@ -63,9 +63,9 @@
 
                  <li> <a class="contact-social__tel link" href="tel:+610383766284 "> +61(0) 383 766 284 </a> </li>
             </ul>
-      </div>
+        </li>
 
-      <div class="contacts-list">    
+      <li class="contacts-list list">    
             <p class="contacts__title">CAFE</p>
 
             <p class="contacts__city">New York</p>
@@ -93,17 +93,21 @@
 
                  <li> <a class="contact-social__tel link" href="tel:+610383766284"> +61(0) 383 766 284 </a> </li>
            </ul>
-         </div>
-      </div>
-
-   <button type="button" class="main-button-filled"
-   location-modal-open>
-   Our Locations
-    
-   </button>
-
-<button type="button" modal-franchise-open>Franchise</button>
-
+         </li>
+     </ul>
+        <ul class="contacts-button list">
+          <li class="contacts-button-location">
+           <button type="button" class="main-button-filled"
+              location-modal-open>
+             Our Locations >
+            </button>
+          </li>
+          
+          <li>
+             <button type="button" modal-franchise-open>Franchise</button>
+          </li>
+        </ul>
+   </div>
 </section>
 
 <div class="backdrop is-hidden" location-modal>
@@ -113,5 +117,9 @@
                 <use href="./images/sprite.svg#cross"></use>
             </svg>
         </button>
+        <p class="modal__location-title">Our Locations</p>
+        <img src="./images/img-desktop/map-desktop.jpg" alt="Map"/>
+    
+        <button type="button" class="modal__location-button">Open map</button>
     </div>
 </div>
