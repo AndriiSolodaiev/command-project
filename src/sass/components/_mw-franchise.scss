@@ -26,6 +26,7 @@
   height: 16px;
 }
 .franchise-modal__title {
+  text-align: center;
   color: var(--text-color_dark);
   font-family: var(--title-font);
   font-weight: 400;
@@ -43,10 +44,7 @@
 .franchise-modal__form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  &:last-child {
-    gap: 0;
-  }
+  align-items: center;
 }
 .franchise-modal__input {
   display: block;
@@ -56,6 +54,7 @@
   background: var(--input-bg-color);
   border: 1px solid var(--base-bg-color);
   border-radius: 10px;
+  margin-bottom: 12px;
 
   &:focus {
     outline: 1px solid var(--base-bg-color);
@@ -67,12 +66,15 @@
   }
 }
 .franchise-modal__comment {
+  resize: none;
+  display: block;
   width: 100%;
   height: 64px;
   padding: 12px 8px;
   background: var(--input-bg-color);
   border: 1px solid var(--base-bg-color);
   border-radius: 10px;
+  margin-bottom: 24px;
 
   &:focus {
     outline: 1px solid var(--base-bg-color);
@@ -84,14 +86,32 @@
 }
 @media screen and (min-width: 768px) {
   .franchise-modal {
-    padding: 60px 32px;
+    padding-top: 32px;
     width: 568px;
     height: 668px;
   }
   .franchise-modal__title {
-    text-align: center;
+    width: 322px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
   }
-  .franchise-modal__form {
+  .franchise-modal__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  .franchise-modal__input {
     width: 368px;
+    height: 42px;
+  }
+  .franchise-modal__comment {
+    height: 84px;
+    width: 368px;
+    margin-bottom: 32px;
   }
 }

@@ -1,6 +1,7 @@
 .advantages{
     text-align: center;
     align-items: center;
+    padding-top: 42px;
 }
 
 .section-link__advantages{
@@ -27,7 +28,6 @@
         align-items: center;
     }
    .number-list__advantages {
-        font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -35,7 +35,6 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: var(--modal-bg-color);
-        margin-bottom: 18px;
         justify-content: center;
         align-items: center;
    }
@@ -58,6 +57,7 @@
    .section-page__advantages {
         justify-content: center;
    }
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -74,7 +74,6 @@
         line-height: 1.22;
         text-align: center;
         letter-spacing: 0.04em;
-        text-transform: uppercase;
         color: var(--modal-bg-color);
         margin-top: 32px;
     
@@ -99,10 +98,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    .section {
-        padding-top: 0;
-    }
 }
 
 
@@ -119,7 +114,6 @@
          line-height: 1.22;
         text-align: center;
         letter-spacing: 0.04em;
-        text-transform: uppercase;
         color: var(--modal-bg-color);
     }
 
