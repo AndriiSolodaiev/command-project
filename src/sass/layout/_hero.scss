@@ -48,10 +48,9 @@
 .hero__points-of-sale_wrapper {
     padding-top: 50px;
     padding-bottom: 15px;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
 
 .hero__plate-container {
@@ -225,6 +224,15 @@
     }
 
 
+    .hero__points-of-sale_wrapper {
+        padding-top: 50px;
+        padding-bottom: 0;
+        // display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
     .hero__points-of-sale {
         display: block;
     }
@@ -246,9 +254,10 @@
         font-family: var(--primary-font);
         font-weight: 400;
         font-size: 8px;
+        margin-bottom: 16px;
         line-height: 10px;
         text-align: right;
-        margin-top: 4px;
+        margin-top: 3px;
         color: var(--text-color_light);
     }
 
@@ -315,10 +324,11 @@
     .hero__plate-container {
         z-index: 1;
         position: relative;
-        margin-top: 30px;
+        // margin-top: 15px;
         display: flex;
         align-items: center;
         // margin-bottom: 14px;
+        height: 167px;
     }
 
     .hero__plate-descr {
@@ -350,13 +360,13 @@
     .hero__wrapper {
         justify-content: space-between;
         display: flex;
-        // z-index: 30;
+        height: 587px;
         position: relative;
     }
 
     .hero__wrapper-img {
         position: absolute;
-        top: 0;
+        top: -3px;
     }
 
     .hero {
@@ -365,6 +375,7 @@
 
     .hero-sec-mod {
         height: 587px;
+        position: absolute;
     }
 
     .hero__title {
@@ -431,11 +442,13 @@
 
     .hero__plate-container {
         // z-index: 50;
-        position: relative;
+        position: absolute;
         margin-top: 41px;
         display: flex;
         align-items: center;
         margin-bottom: 64px;
+        bottom:0;
+
     }
 
     .hero__plate-descr {
@@ -471,8 +484,8 @@
         // background-repeat: no-repeat;
         width: 477px;
         height: 589.64px;
-        top: 31px;
-        left: 66px;
+        // top: 31px;
+        left: 634px;
         // left: 2.46px;
         // top: 0px;
         // background: rgba(252, 252, 252, 0.44);
@@ -486,20 +499,20 @@
         bottom: 0;
         position: absolute;
         margin-left: -20px;
-        height: 563px;
-        width: 456px;
+        height: 385px;
+        width: 1200px;
         background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
         background-position: left bottom;
         background-repeat: no-repeat;
         bottom: 0;
-        left: 622px;
+        // left: 622px;
     }
 
 
 
     .hero__ice-cream-img {
         position: absolute;
-        left: 512px;
+        left: 627px;
         bottom: 0;
         background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
         height: 561px;
