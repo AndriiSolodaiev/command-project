@@ -1,5 +1,4 @@
-.reviews,
-.gallery {
+.reviews {
   width: 100%;
   background-image: url(/src/images/products/icebackground-tell.png);
   background-position: center;
@@ -34,7 +33,7 @@
 }
 
 .reviews {
-  padding-top: 80px;
+  padding-top: 186px;
   padding-bottom: 394px;
 }
 
@@ -81,6 +80,10 @@
 }
 
 // -----стилі dots---//
+.slick-dots {
+  transform: translateY(-40%);
+}
+
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: #84a178;
@@ -117,7 +120,7 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 60px;
+    padding-top: 223px;
     padding-bottom: 383px;
   }
   .slider-reviews {
@@ -153,7 +156,7 @@
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding-top: 128px;
+    padding-top: 464px;
     padding-bottom: 197px;
   }
   .slider-reviews {
