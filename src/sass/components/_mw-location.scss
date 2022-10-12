@@ -1,0 +1,97 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    height: 458px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+.modal__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.modal__close-icon {
+    width: 20px;
+    height: 20px;
+
+}
+
+.modal__location-title {
+    font-family: var(--title-font);
+    color: var(--text-color_dark);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.modal__location-button {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--text-color_dark);
+    padding: 12px 34px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    height: 42px;
+    border: none;
+    margin-top: 32px;
+    width: 145px;
+    transition: background-color var(--transition-prop), color var(--transition-prop);
+
+}
+.madal__map {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+}
+
+
+
+
+.contact__buttons-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact__button {
+    width: 192px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__buttons-position {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .contact__button {
+        width: 196px;
+    }
+}
