@@ -72,10 +72,11 @@
     height: 24px;
     border: 2px solid var(--accent-color);
     border-radius: 8px;
+    transition: color var(--transition-prop);
+
 
     &:hover {
         border: 2px solid var(--mdl-btn-color_hover);
-        transition-duration: var(--transition-prop);
     }
 
     &:disabled {
@@ -84,7 +85,6 @@
 
     &:focus {
         border: 2px solid var(--mdl-btn-color_hover);
-        transition-duration: var(--transition-prop);
         color: var(--text-color_light);
     }
 }
@@ -103,10 +103,10 @@
     text-align: center;
     text-decoration-line: underline;
     color: var(--accent-color);
+    transition: color var(--transition-prop);
 
     &:hover {
         color: var(--mdl-btn-color_hover);
-        transition-duration: var(--transition-prop);
     }
 
     &:disabled {
@@ -115,7 +115,6 @@
 
     &:focus {
         color: var(--text-color_light);
-        transition-duration: var(--transition-prop);
     }
 }
 
@@ -150,7 +149,7 @@
     margin-left: -26px;
     width: 333px;
     height: 50px;
-    // background-image: url(/src/images/img-mobile/mobil-dots-bgr.png);
+    background-image: url(/src/images/img-mobile/mobil-dots-bgr.png);
     // background-image: image-set ("/src/images/img-mobile/mobil-dots-bgr.png" 1x, "/src/images/img-mobile/mobil-dots-bgr@2x.png" 2x);
     // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-dots-bgr.png") 1x, url("/src/images/img-mobile/mobil-dots-bgr@2x.png") 2x);
 
@@ -167,13 +166,21 @@
     bottom: 0;
 }
 
+// @media screen and (min-device-pixel-ratio: 2),
+// screen and (min-resolution: 192dpi),
+// screen and (min-resolution: 2dppx) {
+//     .hero__dots-img {
+//         background-image: url("../images/img-mobile/mobil-dots-bgr@2x.png");
+//     }
+// }
+
 
 
 
 
 .hero__ice-cream-img {
     position: absolute;
-    // background-image: url(/src/images/img-mobile/mobil-ice-cream.png);
+    background-image: url(/src/images/img-mobile/mobil-ice-cream.png);
     // background-image: image-set ("/src/images/img-mobile/mobil-ice-cream.png" 1x, "/src/images/img-mobile/mobil-ice-cream@2x.png" 2x);
     // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-ice-cream.png") 1x, url("/src/images/img-mobile/mobil-ice-cream@2x.png") 2x);
 
@@ -316,19 +323,21 @@
         margin-left: -20px;
         width: 768px;
         height: 68px;
-        // background-image: url(/src/images/img-tablet/tablet-dots-bgr.png);
+        background-image: url(/src/images/img-tablet/tablet-dots-bgr.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-dots-bgr.png" 1x, "/src/images/img-tablet/tablet-dots-bgr@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-dots-bgr.png") 1x, url("/src/images/img-tablet/tablet-dots-bgr@2x.png") 2x);
         background-position: left bottom;
         background-repeat: no-repeat;
     }
 
+
+
     .hero__ice-cream-img {
         position: absolute;
         left: 389px;
         // top: -380px;
         bottom: 0;
-        // background-image: url(/src/images/img-tablet/tablet-ice-cream.png);
+        background-image: url(/src/images/img-tablet/tablet-ice-cream.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-ice-cream.png" 1x, "/src/images/img-tablet/tablet-ice-cream@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-ice-cream.png") 1x, url("/src/images/img-tablet/tablet-ice-cream@2x.png") 2x);
 
@@ -366,7 +375,7 @@
         margin-right: 33px;
         display: block;
         position: relative;
-        // background-image: url(/src/images/img-tablet/tablet-plate.png);
+        background-image: url(/src/images/img-tablet/tablet-plate.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-plate.png" 1x, "/src/images/img-tablet/tablet-plate@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-plate.png") 1x, url("/src/images/img-tablet/tablet-plate@2x.png") 2x);
 
@@ -492,7 +501,7 @@
         margin-right: 14px;
         display: block;
         position: relative;
-        // background-image: url(/src/images/img-desktop/desktop-plate.png);
+        background-image: url(/src/images/img-desktop/desktop-plate.png);
         // background-image: image-set ("/src/images/img-desktop/desktop-plate.png" 1x, "/src/images/img-desktop/desktop-plate@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desktop-plate.png") 1x, url("/src/images/img-desktop/desktop-plate@2x.png") 2x);
 
@@ -527,7 +536,7 @@
         margin-left: -20px;
         height: 385px;
         width: 1200px;
-        // background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
+        background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
         // background-image: image-set ("/src/images/img-desktop/desctop-dots-bgr.png" 1x, "/src/images/img-desktop/desctop-dots-bgr@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-dots-bgr.png") 1x, url("/src/images/img-desktop/desctop-dots-bgr@2x.png") 2x);
         background-position: left bottom;
@@ -542,7 +551,7 @@
         position: absolute;
         left: 627px;
         bottom: 0;
-        // background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
+        background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
         // background-image: image-set ("/src/images/img-desktop/desctop-ice-cream.png" 1x, "/src/images/img-desktop/desctop-ice-cream@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-ice-cream.png") 1x, url("/src/images/img-desktop/desctop-ice-cream@2x.png") 2x);
 
