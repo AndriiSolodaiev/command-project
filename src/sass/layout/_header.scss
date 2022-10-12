@@ -38,6 +38,7 @@
 @media screen and (min-width: 768px) {
     .page-header {
         justify-content: flex-start;
+        padding-top: 20px;
     }
     .logo {
         margin-right: 440px;
@@ -64,6 +65,9 @@
     .logo__image {
         width: 60px;
         height: 65px;
+    }
+    .page-header {
+        padding-top: 8px;
     }
     .page-header__navigation {
         display: flex;
@@ -102,15 +106,17 @@
     .mobile-menu {
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        width: 0;
         height: 100%;
         z-index: 5;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: visibility (var(--transition-prop)), opacity (var(--transition-prop));
-        padding-top: 12px;
+        right: 0;
+        overflow-x: hidden;
+        transition: 1s;
+        // mobile-menu.js currently off //
+        // visibility: hidden;
+        // opacity: 0;
+        // pointer-events: none;
+        // transition: visibility (var(--transition-prop)), opacity (var(--transition-prop));
         background-color: var(--base-bg-color);
     }
 
@@ -118,6 +124,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        padding-top: 12px;
     }
 
     .mobile-menu__heading {
@@ -126,11 +133,11 @@
         align-items: center;
         margin-bottom: 76px;
     }
-    .mobile-menu-is-open {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-    }
+    // .mobile-menu-is-open {
+    //     visibility: visible;
+    //     opacity: 1;
+    //     pointer-events: auto;
+    // }
 
     .mobile-menu__navigation-list {
         display: flex;
@@ -176,9 +183,13 @@
     .buy-now-button-mobile {
             display: none;
     }
+    .mobile-menu__container {
+        padding-top: 20px;
+    }
     .mobile-menu__navigation-list {
         gap: 40px;
     }
+    
 
 }
 

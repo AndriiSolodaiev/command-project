@@ -20,7 +20,7 @@
       />
     </picture>
   </a>
-  <button type="button" class="mobile-menu-btn" mobile-menu-open>
+  <button type="button" class="mobile-menu-btn" onclick="openNav()">
     <svg class="mobile-menu-btn__icon">
       <use href="./images/sprite.svg#icon-burger"></use>
     </svg>
@@ -57,7 +57,7 @@
     Buy now >
   </button>
 
-  <div class="mobile-menu" mobile-menu>
+  <div class="mobile-menu" id="mobile-menu" style="width: 0">
     <div class="container mobile-menu__container">
       <div class="mobile-menu__heading">
         <picture>
@@ -75,7 +75,11 @@
             alt="company logo"
           />
         </picture>
-        <button class="mobile-menu__btn-close" mobile-menu-close type="button">
+        <button
+          class="mobile-menu__btn-close"
+          onclick="closeNav()"
+          type="button"
+        >
           <svg class="mobile-menu__icon-close">
             <use href="./images/sprite.svg#cross"></use>
           </svg>
@@ -112,4 +116,12 @@
       </button>
     </div>
   </div>
+  <script>
+    function openNav() {
+      document.getElementById('mobile-menu').style.width = '100%';
+    }
+    function closeNav() {
+      document.getElementById('mobile-menu').style.width = '0';
+    }
+  </script>
 </header>
