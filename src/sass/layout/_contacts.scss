@@ -32,7 +32,6 @@
             margin-right: auto;
             margin-bottom: 20px;
     }
-
         .contacts__name {
             width: 130px;
             //height: 16px;
@@ -125,7 +124,6 @@
             align-items: center;
             flex-direction: column;
             margin-top: -347px;
-        
     }
 
     .contacts-button-location {
@@ -136,8 +134,18 @@
 
 
 @media screen and (min-width: 768px) {
+    .contacts-container {
+        padding-top: 284px;
+    }
+    .cards-wrapper {
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+        top:-304px;
+    }
     .cards {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
         position: relative;
@@ -265,7 +273,6 @@
              justify-content: center;
              flex-direction: row;
              margin-top: -300px;
-        
     }
 
         .contacts-button-location {
@@ -276,7 +283,7 @@
 
 
 @media screen and (min-width: 1200px) {
-    
+
     .cards {
         display: flex;
         flex-wrap: wrap;
@@ -287,6 +294,7 @@
     }
 
     .contacts-list {
+
         background: #FFFFFF;
         padding: 40px;
         margin-right: auto;
@@ -415,6 +423,7 @@
     justify-content: center;
     flex-direction: row;
     //margin-top: 64px;
+
 
 }
 }
