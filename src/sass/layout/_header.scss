@@ -9,8 +9,6 @@
     display: none;
 }
 
-
-
 .logo {
     display: inline-block;
 }
@@ -18,7 +16,6 @@
     width: 40.47px;
     height: 37px;
 }
-
 
 .mobile-menu-btn {
     line-height: 0;
@@ -108,12 +105,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
+        z-index: 5;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
         transition: visibility (var(--transition-prop)), opacity (var(--transition-prop));
         padding-top: 12px;
+        background-color: var(--base-bg-color);
     }
 
     .mobile-menu__container {
