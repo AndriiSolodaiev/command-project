@@ -108,6 +108,9 @@
 .ingredients-menu__table-row {
     display: flex;
     justify-content: space-between;
+    td {
+        padding: 0;
+    }
     &:not(:last-child) {
         margin-bottom: 11px;
     }
