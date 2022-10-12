@@ -55,10 +55,7 @@
 
 .slider-reviews__description {
   height: 256px;
-  padding-top: 34px;
-  padding-bottom: 34px;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding: 34px 39px;
   background-color: var(--base-bg-color);
   border-radius: 10px;
 }
@@ -112,11 +109,9 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.slick-prev {
-  left: 0;
-}
+.slick-prev,
 .slick-next {
-  right: 0;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -158,7 +153,6 @@
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    // padding-top: 464px;
     padding-top: 128px;
     padding-bottom: 197px;
   }
