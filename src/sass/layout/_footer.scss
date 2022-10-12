@@ -33,7 +33,6 @@
           padding-top: 42px;
           padding-bottom: 38px;
           width: 152px;
-          height: 35px;
           margin-left: auto;
         }
 
@@ -136,6 +135,13 @@
         }
        
         .footer_social-list {
+          column-gap: 30px;
+          padding-bottom: 32px;
+          width: 100%;
+       
+        }
+
+        .footer_social-list {
           width: 162px;
         }
 
@@ -165,11 +171,11 @@
           font-weight: 400;
           font-size: 30px;
           margin-top: 120px;
-          width: 504px;
+          width: 100%;
         }
         .footer_name-second {
           font-size: 58px;
-          width: 497px;
+          width: 100%;
           margin-top: 14px;
         }
 
@@ -177,6 +183,12 @@
           margin-bottom: 54px;
         }
         
+        .footer_social-list {
+         
+          padding-bottom: 40px;
+        
+        }
+
         .footer_contacts {
           font-size: 16px;
           letter-spacing: 0.02em;
