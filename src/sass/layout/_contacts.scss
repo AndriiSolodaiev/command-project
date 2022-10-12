@@ -145,12 +145,13 @@
     }
 
     .contacts-list {
+        width: calc((100% - 32px) / 3);
         background: #FFFFFF;
         padding: 40px 24px;
         margin-right: auto;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         margin-bottom: 60px;
-        width: 224px;
+        //width: 224px;
         height: 538px;
         border-radius: 24px;
 
@@ -283,16 +284,18 @@
         gap: 32px;
         position: relative;
         top: -100px;
+       
         
     }
 
     .contacts-list {
+        width: calc((100% - 64px) / 3);
         background: #FFFFFF;
         padding: 40px;
         margin-right: auto;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         margin-bottom: 64px;
-        width: 368px;
+       // width: 368px;
         height: 538px;
         border-radius: 24px;
     
