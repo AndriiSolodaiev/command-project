@@ -1,140 +1,61 @@
-<section class="products" id="products">
-  <div class="products__container">
-    <h3 class="products__title">100% natural</h3>
-    <h2 class="products__pre-title">products</h2>
-    <ul class="products__cards">
-      <li class="products__list list">
-        <picture class="products__foto">
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/products/icecream-desk.png    1x,
-              ./images/products/icecream-desk-2x.png 2x
-            "
-            width="302"
-            height="317"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/products/icecream-tab.png    1x,
-              ./images/products/icecream-tab-2x.png 2x
-            "
-          />
-          <img
-            class="team__img"
-            srcset="./images/products/icecream-tell-2x.png 2x"
-            src="./images/products/icecream-tell.png"
-            width="200"
-            height="200"
-            alt="Морозиво"
-          />
-        </picture>
-        <div class="products__information-icecream">
-          <h3 class="products__information-title">ice cream</h3>
-          <p class="products__description">
-            Soft ice cream with a delicate taste. Made with milk, cream, sugar
-            and natural stabilizer
-          </p>
-          <button
-            type="button"
-            class="products__button-ice-cream"
-            products-modal-open
-          >
-            <svg class="products__ice-cream-modal-icon" width="40" height="0">
-              <use href="/src/images/sprite.svg#arrow-default"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-      <li class="products__list list">
-        <picture class="products__foto">
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/products/icecoffe-desk.png    1x,
-              ./images/products/icecoffe-desk-2x.png 2x
-            "
-            width="302"
-            height="317"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/products/icecoffe-tab.png    1x,
-              ./images/products/icecoffe-tab-2x.png 2x
-            "
-          />
-          <img
-            class="team__img"
-            srcset="./images/products/icecoffe-tell-2x.png 2x"
-            src="./images/products/icecoffe-tell.png"
-            width="200"
-            height="200"
-            alt="Кава"
-          />
-        </picture>
-        <div class="products__information-icecoffee">
-          <h3 class="products__information-title">ice coffee</h3>
-          <p class="products__description">
-            Fragrant invigorating drink created from 100% natural ingredients
-            without the use of preservatives and flavor enhancers
-          </p>
-          <button
-            type="button"
-            class="products__button-coffee"
-            products-modal2-open
-          >
-            <svg class="products__coffee-modal-icon" width="40" height="0">
-              <use href="/src/images/sprite.svg#arrow-default"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-      <li class="products__list list">
-        <picture class="products__foto">
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/products/milkshakes-desk.png,
-              ./images/products/milkshakes-desk-2x.png 2x
-            "
-            width="302"
-            height="317"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/products/milkshakes-tab.png    1x,
-              ./images/products/milkshakes-tab-2x.png 2x
-            "
-          />
-          <img
-            class="team__img"
-            srcset="./images/products/milkshakes-tab-2x.png 2x"
-            src="./images/products/milkshakes-tell.png"
-            width="200"
-            height="200"
-            alt="Молочний коктел"
-          />
-        </picture>
-        <div class="products__information-milkshakes">
-          <h3 class="products__information-title">milkshakes</h3>
-          <p class="products__description">
-            Sweet drinks based on milk and ice cream, supplemented with syrups,
-            fruits, berries and other sweets of your choice
-          </p>
-          <button
-            type="button"
-            class="products__button-milkshakes"
-            products-modal3-open
-          >
-            <svg class="products__milkshakes-modal-icon" width="40" height="0">
-              <use href="/src/images/sprite.svg#arrow-default"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-    </ul>
-  </div>
+<section class="products">
+    <div class="products__container">
+        <h3 class="products__title">100% natural</h3>
+        <h2 class="products__pre-title">products</h2>
+        <ul class="products__cards">
+            <li class="products__list list">
+                <picture class="products__foto">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/icecream-desk.png 1x, ./images/products/icecream-desk-2x.png 2x, ./images/products/icecream-desk.webp webp" width="302" height="317">
+                    <source media="(min-width: 768px)"
+                        srcset=" ./images/products/icecream-tab.png 1x, ./images/products/icecream-tab-2x.png 2x, ./images/products/icecream-tab.webp webp">
+                    <img  srcset="./images/products/icecream-tell-2x.png 2x, ./images/products/icecream-tell.webp"
+                        src="./images/products/icecream-tell.png" width="200" height="200" alt="Морозиво"/>
+                </picture>
+                <div class="products__information-icecream">
+                    <h3 class="products__information-title">ice cream</h3>
+                    <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                    <button type="button" class="products__button-ice-cream" products-modal-open ><svg class="products__ice-cream-modal-icon" width="40" height="0">
+                        <use href="/src/images/sprite.svg#arrow-default"></use>
+                    </svg></button>
+                </div>
+            </li>
+            <li class="products__list list">
+                <picture class="products__foto">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/icecoffe-desk.png 1x, ./images/products/icecoffe-desk-2x.png 2x, ./images/products/icecoffe-desk.webp webp" width="302" height="317">
+                    <source media="(min-width: 768px)"
+                        srcset=" ./images/products/icecoffe-tab.png 1x, ./images/products/icecoffe-tab-2x.png 2x, ./images/products/icecoffe-tab.webp webp">
+                    <img  srcset="./images/products/icecoffe-tell-2x.png 2x, ./images/products/icecoffe-tell.webp webp"
+                        src="./images/products/icecoffe-tell.png" width="200" height="200" alt="Кава"/>
+                </picture>
+                <div class="products__information-icecoffee">
+                    <h3 class="products__information-title">ice coffee</h3>
+                    <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and
+                        flavor enhancers</p>
+                    <button type="button" class="products__button-coffee" products-modal2-open ><svg class="products__coffee-modal-icon"  width="40" height="0">
+                        <use href="/src/images/sprite.svg#arrow-default"></use>
+                    </svg></button>
+                </div>
+            </li>
+            <li class="products__list list">
+                <picture class="products__foto">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/products/milkshakes-desk.png, ./images/products/milkshakes-desk-2x.png 2x, ./images/products/milkshakes-desk.webp webp" width="302" height="317">
+                    <source media="(min-width: 768px)"
+                        srcset=" ./images/products/milkshakes-tab.png 1x, ./images/products/milkshakes-tab-2x.png 2x, ./images/products/milkshakes-tab.webp webp">
+                    <img  srcset="./images/products/milkshakes-tell-2x.png 2x, ./images/products/milkshakes-tell.webp webp"
+                        src="./images/products/milkshakes-tell.png" width="200" height="200" alt="Молочний коктел"/>
+                </picture>
+                <div class="products__information-milkshakes">
+                    <h3 class="products__information-title">milkshakes</h3>
+                    <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of
+                        your choice</p>
+                    <button type="button" class="products__button-milkshakes" products-modal3-open ><svg class="products__milkshakes-modal-icon" width="40" height="0">
+                        <use href="/src/images/sprite.svg#arrow-default"></use>
+                    </svg></button>
+                </div>
+            </li>
+        </ul>
+    </div>   
 </section>
