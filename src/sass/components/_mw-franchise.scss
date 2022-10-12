@@ -64,7 +64,12 @@
     font-size: 12px;
     line-height: 140%;
   }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 1px solid red;
+  }
 }
+
 .franchise-modal__comment {
   resize: none;
   display: block;
