@@ -109,8 +109,8 @@ text-align: center;
 display: flex;
 margin: 0 auto;
 @include disktop {
-    width: 302px;
-    height: 318px;
+    width: 330px;
+    height: 317px;
 }
 }
 
@@ -119,24 +119,24 @@ margin: 0 auto;
     border-radius: 24px;
     display: block;
     width: 280px;
-    min-height: 528px;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     @include table {
             width: 224px;
-            min-height: 482px;
             margin: 0 auto;
         }     
                  @include disktop {
                      width: 370px;
-                     max-height: 718px;
-                    //  margin: 0 auto;
+                
                  }
 }
-
+.products__list:not(:last-child) {
+    margin-bottom: 56px;
+}
 .products__information-title{
+    padding-top: 15px;
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -146,10 +146,6 @@ margin: 0 auto;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #131313;
-@include disktop {
-        margin-top: 30px;
-    }
-    
 }
 .products__description{
     margin-top: 40px;
@@ -175,19 +171,26 @@ font-family: 'Montserrat';
 
 .products__information-icecream,
 .products__information-icecoffee,
-.products__information-milkshakes
-{ border-radius: 24px;
+.products__information-milkshakes{ 
+    border-radius: 24px;
         padding-left: 40px;
         padding-top: 123px;
         padding-right: 40px;
         text-align: center;
         line-height: 1.8;
-        margin-top: -128px;
+        margin-top: -115px;
+        min-height: 420px;
+        max-width: 280px;
         @include table {
+            margin-top: -110px;
+           
         padding-left: 26px;
         padding-right: 26px;
             }
         @include disktop {
+            margin-top: -150px;
+            min-height: 535px;
+            min-width: 371px;
             padding-left: 63px;
             padding-right: 63px;
 }
@@ -207,7 +210,7 @@ background: #AEC6A5;
     transform: scaleY(1);
     background-color: transparent;
     outline: none;
-    margin-top: 90px;
+    margin-top: 115px;
     padding: 0;
     border: none;
 
@@ -216,8 +219,8 @@ background: #AEC6A5;
     }
 
     @include disktop {
-        margin-top: 85px;
-        margin-bottom: 60px;
+        margin-top: 145px;
+        
     }
 }
 
@@ -229,7 +232,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .products__button-coffee {
     background-color: transparent;
     outline: none;
-    margin-top: 55px;
+    margin-top: 60px;
     padding: 0;
     border: none;
 
@@ -238,7 +241,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 60px;
+        margin-top: 120px;
         margin-bottom: 60px;
     }
 
@@ -252,7 +255,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .products__button-milkshakes {
     background-color: transparent;
     outline: none;
-    margin-top: 90px;
+    margin-top: 75px;
     padding: 0;
     border: none;
 
@@ -261,7 +264,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 60px;
+        margin-top: 120px;
         margin-bottom: 60px;
     }
 }
