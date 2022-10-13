@@ -41,12 +41,14 @@
             background-image: url(/src/images/products/icebackground-tell-2x.png);
         }
                 @include table {
+                    padding-bottom: 0px;
                     background-image: url(/src/images/products/icebackground-tab.jpg);
                     @include retina{
                         background-image: url(/src/images/products/icebackground-tab-2x.jpg)
                     }
 }
  @include disktop{
+    padding-bottom: 0px;
     background-image: url(/src/images/products/icebackground-desk.jpg);
     @include retina {
         background-image: url(/src/images/products/icebackground-desk-2x.jpg)
@@ -62,21 +64,150 @@
     width: 100%;
     
         @include table {
+            padding-top: 80px;
+            max-width: 768px;
+            margin: auto;
             display: flex;
             gap: 16px;
         }
                  @include disktop {
+                    padding-top: 120px;
+                    margin: auto;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    max-width: 1200px;
                      display: flex;
                      gap: 33px;
                  }
 }
-.products__container{
-    
-            max-width: 1200px;
-                justify-content: center;
+
+.products__list-iceream::before{
+    position:relative;
+    display: block;
+    margin: 0 auto;
+        content: '';
+        width: 221px;
+        height: 231px;
+        background-image: url(/src/images/products/icecream-tell.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        @include retina {
+                background-image: url(/src/images/products/icecream-tell-2x.png);
+            }
+            @include table {
                 margin: 0 auto;
-            
+                width: 200px;
+                height: 208px;
+            background-image: url(/src/images/products/icecream-tab.png);   
+            @include retina {
+            background-image: url(/src/images/products/icecream-tab-2x.png);
+            }
+        }
+                
+        @include disktop {
+            width: 302px;
+            height: 317px;
+            margin: 0 auto;
+            background-image: url(/src/images/products/icecream-desk.png);  
+            @include retina
+             {
+                background-image: url(/src/images/products/icecream-desk-2x.png);
+            }
+         }                                                               
 }
+
+.products__list-icecoffe::before {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    content: '';
+    width: 221px;
+    height: 231px;
+        background-image: url(/src/images/products/icecoffe-tell.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    @include retina {
+        background-image: url(/src/images/products/icecoffe-tell-2x.png);
+    }
+
+    @include table {
+        margin: 0 auto;
+        width: 200px;
+        height: 208px;
+        background-image: url(/src/images/products/icecoffe-tab.png);
+
+        @include retina {
+            background-image: url(/src/images/products/icecoffe-tab-2x.png);
+        }
+    }
+
+    @include disktop {
+        width: 302px;
+        height: 317px;
+        margin: 0 auto;
+        background-image: url(/src/images/products/icecoffe-desk.png);
+
+        @include retina {
+            background-image: url(/src/images/products/icecoffe-desk-2x.png);
+        }
+    }
+}
+.products__list-milkshakes::before{
+    position: relative;
+        display: block;
+        margin: 0 auto;
+        content: '';
+        width: 221px;
+        height: 231px;
+        background-image: url(/src/images/products/milkshakes-tell.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    
+        @include retina {
+            background-image: url(/src/images/products/milkshakes-tell-2x.png);
+        }
+    
+        @include table {
+            margin: 0 auto;
+            width: 200px;
+            height: 208px;
+        background-image: url(/src/images/products/milkshakes-tab.png);
+    
+            @include retina {
+                background-image: url(/src/images/products/milkshakes-tab-2x.png);
+            }
+        }
+    
+        @include disktop {
+            width: 302px;
+            height: 317px;
+            margin: 0 auto;
+            background-image: url(/src/images/products/milkshakes-desk.png);
+    
+            @include retina{
+                background-image: url(/src/images/products/milkshakes-desk-2x.png);
+            }
+        }
+}
+
+.products__list-iceream:hover::before,
+.products__list-iceream:focus::before,
+.products__list-icecoffe:hover::before,
+.products__list-icecoffe:focus::before,
+.products__list-milkshakes:hover::before,
+.products__list-milkshakes:focus::before
+{
+    transform: translateY(15px);
+    transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .products__title{
     font-weight: 800;
     font-size: 18px;
@@ -86,6 +217,17 @@
     color: #131313;
     justify-content: center;
     align-items: center;
+    @include table {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 1.22;
+        }
+    
+        @include disktop {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 1.23;
+}
 }
 .products__pre-title{
 font-family: 'Seymour One';
@@ -100,43 +242,43 @@ color: #131313;
 justify-content: center;
 align-items: center;
 margin-top: 12px;
-}
+@include table {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.26;
+    }
 
-.products__foto{
-justify-content: center;
-align-items: center;
-text-align: center;
-display: flex;
-margin: 0 auto;
-@include disktop {
-    width: 330px;
-    height: 317px;
-}
+    @include disktop {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 1.25;
+
+    }
 }
 
 .products__list{
     margin-bottom: 50px;
     border-radius: 24px;
     display: block;
-    width: 280px;
+    max-width: 280px;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     @include table {
-            width: 224px;
+            max-width: 224px;
             margin: 0 auto;
         }     
                  @include disktop {
-                     width: 370px;
-                
+                max-width: 370px;
+                margin-bottom: 50px;
                  }
 }
 .products__list:not(:last-child) {
     margin-bottom: 56px;
 }
 .products__information-title{
-    padding-top: 15px;
+    padding-top: 0px;
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -146,10 +288,23 @@ margin: 0 auto;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #131313;
+        @include table {
+                padding-top: 0px;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 1.22;
+            }
+        
+            @include disktop {
+                padding-top: 15px;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 1.23;
+        
+            }
 }
 .products__description{
-    margin-top: 40px;
-font-family: 'Montserrat';
+margin-top: 40px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -159,14 +314,13 @@ font-family: 'Montserrat';
     color: #131313;
     @include disktop {
             margin-top: 65px;
-            font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 176%;
-                text-align: center;
-                letter-spacing: 0.04;
-        }  
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 176%;
+            text-align: center;
+            letter-spacing: 0.04;
+        }
 }
 
 .products__information-icecream,
@@ -178,24 +332,21 @@ font-family: 'Montserrat';
         padding-right: 40px;
         text-align: center;
         line-height: 1.8;
-        margin-top: -115px;
-        min-height: 420px;
-        max-width: 280px;
+        margin-top: -120px;
+        // min-height: 420px;
+        // max-width: 280px;
         @include table {
-            margin-top: -110px;
-           
+            margin-top: -125px;
         padding-left: 26px;
         padding-right: 26px;
             }
         @include disktop {
             margin-top: -150px;
-            min-height: 535px;
             min-width: 371px;
             padding-left: 63px;
             padding-right: 63px;
 }
 }
-
 .products__information-icecream{
 background: #AEC6A5;
 }
@@ -219,7 +370,8 @@ background: #AEC6A5;
     }
 
     @include disktop {
-        margin-top: 145px;
+        margin-top: 117px;
+        margin-bottom: 60px;
         
     }
 }
@@ -241,7 +393,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 120px;
+        margin-top: 61px;
         margin-bottom: 60px;
     }
 
@@ -264,7 +416,7 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 120px;
+        margin-top: 90px;
         margin-bottom: 60px;
     }
 }

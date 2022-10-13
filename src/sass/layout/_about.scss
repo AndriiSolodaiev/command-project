@@ -1,6 +1,7 @@
 .about {
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0;
     text-align: center;
 }
 .about__subject {
@@ -8,8 +9,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 12px;
-
-
 }
 .about__box {
     position: relative;
@@ -65,9 +64,9 @@ color: var(--text-color_light);
 }
 
 @media screen and (min-width: 768px) {
-    .about__container {
+    .about__content {
         display: flex;
-        text-align: left;
+        justify-content: center;
     }
     .about__subject {
         width: 100%;
@@ -76,22 +75,23 @@ color: var(--text-color_light);
         width: 335px;
         height: 330px;
         margin-top: 72px;
-        margin-right: 32px;
         margin-left: 0;
+        margin-right: 32px;
+        margin-bottom: 21px;
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         border-radius: 250px;
-        margin-bottom: 0px;
 
     }
     .about__img {
-        top: 26px;
+        top: 21px;
         width: 335px;
         height: 330px;
     }
     .about__holder {
         width: 336px;
         margin-top: 79px;
-        padding: 0;
+        padding: 0; 
+        text-align: left;
 
     }
     .about__text--margin {
@@ -104,19 +104,25 @@ color: var(--text-color_light);
     }
 
     .about__btn {
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 48px;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .about {
+    .about { 
         padding-bottom: 29px;
+    }
+    .about__content{
+        justify-content: start;
+        column-gap: 100px;
     }
     .about__box {
         width: 500px;
         height: 500px;
         margin-top: 82px;
-        margin-right: 100px;
+        margin-right: 0;
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         border-radius: 250px;
         margin-bottom: 0px;
@@ -130,7 +136,6 @@ color: var(--text-color_light);
         width: 463px;
         height: 257px;
         margin-top: 172px;
-
     }
     .about__text {
         font-size: 16px;
