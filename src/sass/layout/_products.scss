@@ -41,14 +41,12 @@
             background-image: url(/src/images/products/icebackground-tell-2x.png);
         }
                 @include table {
-                    padding-bottom: 0px;
                     background-image: url(/src/images/products/icebackground-tab.jpg);
                     @include retina{
                         background-image: url(/src/images/products/icebackground-tab-2x.jpg)
                     }
 }
  @include disktop{
-    padding-bottom: 0px;
     background-image: url(/src/images/products/icebackground-desk.jpg);
     @include retina {
         background-image: url(/src/images/products/icebackground-desk-2x.jpg)
@@ -58,8 +56,11 @@
 }
 
 .products__cards{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
     width: 100%;
     
@@ -68,6 +69,7 @@
             max-width: 768px;
             margin: auto;
             display: flex;
+            flex-direction: row;
             gap: 16px;
         }
                  @include disktop {
@@ -205,7 +207,7 @@
 .products__list-milkshakes:focus::before
 {
     transform: translateY(15px);
-    transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-prop);
 }
 
 .products__title{
@@ -230,7 +232,7 @@
 }
 }
 .products__pre-title{
-font-family: 'Seymour One';
+font-family: var(--title-font);
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
@@ -257,9 +259,10 @@ margin-top: 12px;
 }
 
 .products__list{
-    margin-bottom: 50px;
     border-radius: 24px;
     display: block;
+    flex-grow: 1;
+    height: 100%;
     max-width: 280px;
     justify-content: center;
     align-items: center;
@@ -271,15 +274,11 @@ margin-top: 12px;
         }     
                  @include disktop {
                 max-width: 370px;
-                margin-bottom: 50px;
                  }
 }
-.products__list:not(:last-child) {
-    margin-bottom: 56px;
-}
+
 .products__information-title{
-    padding-top: 0px;
-    font-family: 'Montserrat';
+    font-family: var(--primary-font);
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -289,7 +288,7 @@ margin-top: 12px;
         text-transform: uppercase;
         color: #131313;
         @include table {
-                padding-top: 0px;
+                
                 font-weight: 700;
                 font-size: 22px;
                 line-height: 1.22;
@@ -312,6 +311,8 @@ margin-top: 40px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #131313;
+    height:100%;
+    flex-grow: 1;
     @include disktop {
             margin-top: 65px;
             font-style: normal;
@@ -319,7 +320,7 @@ margin-top: 40px;
             font-size: 16px;
             line-height: 176%;
             text-align: center;
-            letter-spacing: 0.04;
+            letter-spacing: 0.04em;
         }
 }
 
@@ -342,9 +343,9 @@ margin-top: 40px;
             }
         @include disktop {
             margin-top: -150px;
-            min-width: 371px;
             padding-left: 63px;
             padding-right: 63px;
+            padding-bottom:52.5px;
 }
 }
 .products__information-icecream{
@@ -370,8 +371,8 @@ background: #AEC6A5;
     }
 
     @include disktop {
-        margin-top: 117px;
-        margin-bottom: 60px;
+        margin-top: 108px;
+        
         
     }
 }
@@ -393,8 +394,8 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 61px;
-        margin-bottom: 60px;
+        margin-top: 79.85px;
+        
     }
 
 }
@@ -416,8 +417,8 @@ transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include disktop {
-        margin-top: 90px;
-        margin-bottom: 60px;
+        margin-top: 79.85px;
+        
     }
 }
 
