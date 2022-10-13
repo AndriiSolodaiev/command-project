@@ -41,12 +41,14 @@
             background-image: url(/src/images/products/icebackground-tell-2x.png);
         }
                 @include table {
+                    padding-bottom: 0px;
                     background-image: url(/src/images/products/icebackground-tab.jpg);
                     @include retina{
                         background-image: url(/src/images/products/icebackground-tab-2x.jpg)
                     }
 }
  @include disktop{
+    padding-bottom: 0px;
     background-image: url(/src/images/products/icebackground-desk.jpg);
     @include retina {
         background-image: url(/src/images/products/icebackground-desk-2x.jpg)
@@ -129,7 +131,7 @@ margin: 0 auto;
         }     
                  @include disktop {
                      width: 370px;
-                
+                margin-bottom: 50px;
                  }
 }
 .products__list:not(:last-child) {
@@ -183,7 +185,6 @@ font-family: 'Montserrat';
         max-width: 280px;
         @include table {
             margin-top: -110px;
-           
         padding-left: 26px;
         padding-right: 26px;
             }
