@@ -1,16 +1,84 @@
 .gallery {
-  position: relative;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+    rgba(132, 161, 120, 100%) 0% 18%,
+    rgba(255, 255, 255, 100%) 18% 100%
+  );
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .gallery__container {
+      background: linear-gradient(
+        rgba(132, 161, 120, 100%) 0% 18%,
+        rgba(255, 255, 255, 100%) 18% 100%
+      );
+    }
+    // background-image: url(/src/images/products/icebackground-tell-2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+     background: linear-gradient(
+    rgba(132, 161, 120, 100%) 0% 50%,
+    rgba(255, 255, 255, 100%) 50% 100%
+  );
+    // background-image: url(/src/images/products/icebackground-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+       background: linear-gradient(
+    rgba(132, 161, 120, 100%) 0% 50%,
+    rgba(255, 255, 255, 100%) 50% 100%
+  );
+  .gallery__container {
+      background: linear-gradient(
+        rgba(132, 161, 120, 100%) 0% 50%,
+        rgba(255, 255, 255, 100%) 50% 100%
+      );
+    }
+    // background-image: url(/src/images/products/icebackground-tab-2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+  //   background: linear-gradient(
+  //   rgba(132, 161, 120, 100%) 0% 22%,
+  //   rgba(255, 255, 255, 100%) 22% 100%
+  // );
+    background-image: linear-gradient(
+    rgba(132, 161, 120, 100%) 0% 22%,
+    rgba(255, 255, 255, 100%) 22% 100%
+  ), url(/src/images/products/icebackground-desk.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+    rgba(132, 161, 120, 100%) 0% 22%,
+    rgba(255, 255, 255, 100%) 22% 100%
+  ), url(/src/images/products/icebackground-desk-2x.jpg);
+  .gallery__container {
+      background: linear-gradient(
+        rgba(132, 161, 120, 100%) 0% 22%,
+        rgba(255, 255, 255, 100%) 22% 100%
+      );
+    }
+  }
 }
 
+.gallery__container {
+  background-color: #fff;
+}
 .slider-gallery {
-  position: absolute;
-  top: -24px;
-  left: 50%;
   width: 279px;
   height: 130.03px;
-  transform: translateX(-50%);
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .slider-gallery__img {
   border-radius: 7.40681px;
@@ -18,7 +86,6 @@
 
 @media screen and (min-width: 768px) {
   .slider-gallery {
-    top: -163px;
     width: 704px;
     height: 327px;
   }
@@ -29,8 +96,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .gallery__container {
+    padding-left: 96px;
+    padding-right: 94px;
+  }
   .slider-gallery {
-    top: -85px;
     width: 1013px;
     height: 422px;
   }
