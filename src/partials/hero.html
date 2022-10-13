@@ -8,7 +8,7 @@
                 </h1>
                 <div class="hero__anchors">
                     <a href="#products" class="hero__products">Products</a>
-                    <a href="#how-its-made" class="hero__made">How it’s made?</a>
+                    <a href="#about" class="hero__made">How it’s made?</a>
                 </div>
             </div>
 
@@ -29,7 +29,21 @@
 
 
         <div class="hero__plate-container">
-            <div class="hero__plate-img"></div>
+            <!-- <div class="hero__plate-img"></div> -->
+
+            <picture>
+                <source srcset="./images/img-desktop/desktop-plate.webp 1x,
+                    ./images/img-desktop/desktop-plate@2x.webp 2x " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="./images/img-desktop/desktop-plate.png 1x,
+                    ./images/img-desktop/desktop-plate@2x.png 2x " media="(min-width: 1200px)" />
+                <source srcset="./images/img-tablet/tablet-plate.webp 1x,
+                    ./images/img-tablet/tablet-plate@2x.webp 2x " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="./images/img-tablet/tablet-plate.png 1x, ./images/img-tablet/tablet-plate@2x.png
+                    2x " media="(min-width: 768px)" />
+
+                <img class="hero__plate-img" src="./images/img-tablet/tablet-plate.png" alt="plate" />
+            </picture>
+
 
             <!-- <picture class="hero__plate-img">
                 <source media="(min-width: 768px) and (max-width: 1199px)"
@@ -42,8 +56,10 @@
 
             <div class="hero__plate-descr">
 
-                <p>Ice cream is not only delicious, but also an interesting topic. We will tell you stories about your favorite dessert that you did not know.</p>
-                <a href="https://www.kiwi.com/stories/10-interesting-facts-about-ice-cream-around-the-world/"><img src="./images/arrow.svg" alt="arrow" class="hero__plate-descr-arrow"></a>
+                <p>Ice cream is not only delicious, but also an interesting topic. We will tell you stories about your
+                    favorite dessert that you did not know.</p>
+                <a href="https://www.kiwi.com/stories/10-interesting-facts-about-ice-cream-around-the-world/"><img
+                        src="./images/arrow.svg" alt="arrow" class="hero__plate-descr-arrow"></a>
 
             </div>
         </div>
@@ -54,7 +70,26 @@
                 </use>
             </svg> -->
             <div class="hero__ice-cream-blur"></div>
-            <div class="hero__dots-img"></div>
+            <!-- <div class="hero__dots-img"></div> -->
+
+
+            <picture>
+                <source srcset="./images/img-desktop/desctop-dots-bgr.webp 1x,
+                    ./images/img-desktop/desctop-dots-bgr@2x.webp 2x " media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="./images/img-desktop/desctop-dots-bgr.png 1x,
+                    ./images/img-desktop/desctop-dots-bgr@2x.png 2x " media="(min-width: 1200px)" />
+                <source srcset="./images/img-tablet/tablet-dots-bgr.webp 1x,
+                    ./images/img-tablet/tablet-dots-bgr@2x.webp 2x " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="./images/img-tablet/tablet-dots-bgr.png 1x, ./images/img-tablet/tablet-dots-bgr@2x.png
+                    2x " media="(min-width: 768px)" />
+
+                <source srcset="./images/img-mobile/mobil-dots-bgr.webp 1x, ./images/img-mobile/mobil-dots-bgr@2x.webp
+                    2x " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./images/img-mobile/mobil-dots-bgr.png 1x, ./images/img-mobile/mobil-dots-bgr@2x.png
+                    2x " media="(max-width: 767px)" />
+                <img class="hero__dots-img" src="./images/img-mobile/mobil-dots-bgr.png" alt="Dots" />
+            </picture>
+
 
             <!-- <picture class="hero__dots-img">
                 <source media="(max-width: 767px)"
@@ -77,7 +112,28 @@
                 <img src="./images/img-desktop/desctop-ice-cream.png" alt="ice-cream" />
             </picture> -->
 
-            <div class="hero__ice-cream-img"></div>
+
+
+
+            <picture>
+                <source srcset="./images/img-desktop/desctop-ice-cream.webp 1x,
+                    ./images/img-desktop/desctop-ice-cream@2x.webp 2x " media="(min-width: 1200px)"
+                    type="image/webp" />
+                <source srcset="./images/img-desktop/desctop-ice-cream.png 1x,
+                    ./images/img-desktop/desctop-ice-cream@2x.png 2x " media="(min-width: 1200px)" />
+                <source srcset="./images/img-tablet/tablet-ice-cream.webp 1x,
+                    ./images/img-tablet/tablet-ice-cream@2x.webp 2x " media="(min-width: 768px)" type="image/webp" />
+                <source srcset="./images/img-tablet/tablet-ice-cream.png 1x, ./images/img-tablet/tablet-ice-cream@2x.png
+                    2x " media="(min-width: 768px)" />
+
+                <source srcset="./images/img-mobile/mobil-ice-cream.webp 1x, ./images/img-mobile/mobil-ice-cream@2x.webp
+                    2x " media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./images/img-mobile/mobil-ice-cream.png 1x, ./images/img-mobile/mobil-ice-cream@2x.png
+                    2x " media="(max-width: 767px)" />
+                <img class="hero__ice-cream-img" src="./images/img-mobile/mobil-ice-cream.png" alt="Ice cream" />
+            </picture>
+
+            <!-- <div class="hero__ice-cream-img"></div> -->
         </div>
 
     </div>
