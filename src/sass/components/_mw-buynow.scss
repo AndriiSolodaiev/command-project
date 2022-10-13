@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;  
     max-width: 280px;
-    height: 986px;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,6 +11,7 @@
     border: 2px solid var(--accent-color);
     border-radius: 10px;
     z-index:5;
+    overflow: auto;
 }
 .buy-now-menu__heading {
     margin-bottom: 20px;
@@ -223,7 +224,7 @@ textarea {
     .buy-now-menu {
         width: 100%;
         max-width: 568px;
-        height: 644px;
+        height: 100%;
         padding-top: 32px;
     }
     .buy-now-menu__list {
