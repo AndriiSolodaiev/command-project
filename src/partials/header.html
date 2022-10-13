@@ -44,7 +44,7 @@
       </li>
       <li class="page-header__navigation-list-item">
         <a class="page-header__navigation-list-link link" href="#contacts"
-          >Contacts</a
+          >Contact</a
         >
       </li>
     </ul>
@@ -54,7 +54,10 @@
     buy-now-menu-open
     type="button"
   >
-    Buy now >
+    Buy now
+    <svg class="buy-now-button-arrow">
+      <use href="./images/sprite.svg#btn-arrow"></use>
+    </svg>
   </button>
 
   <div class="mobile-menu" id="mobile-menu" style="width: 0">
@@ -92,18 +95,27 @@
           >
         </li>
         <li class="mobile-menu__navigation-list-item">
-          <a class="mobile-menu__navigation-list-link link" href="#about"
+          <a
+            class="mobile-menu__navigation-list-link link"
+            href="#about"
+            onclick="closeNav()"
             >How it's made?</a
           >
         </li>
         <li class="mobile-menu__navigation-list-item">
-          <a class="mobile-menu__navigation-list-link link" href="#products"
+          <a
+            class="mobile-menu__navigation-list-link link"
+            href="#products"
+            onclick="closeNav()"
             >Our products</a
           >
         </li>
         <li class="mobile-menu__navigation-list-item">
-          <a class="mobile-menu__navigation-list-link link" href="#contacts"
-            >Contacts</a
+          <a
+            class="mobile-menu__navigation-list-link link"
+            href="#contacts"
+            onclick="closeNav()"
+            >Contact</a
           >
         </li>
       </ul>
@@ -112,7 +124,10 @@
         buy-now-menu-open-mobile
         type="button"
       >
-        Buy now >
+        Buy now
+        <svg class="buy-now-button-arrow">
+          <use href="./images/sprite.svg#btn-arrow"></use>
+        </svg>
       </button>
     </div>
   </div>
