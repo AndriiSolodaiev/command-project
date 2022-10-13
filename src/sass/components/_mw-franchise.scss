@@ -4,11 +4,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 280px;
-  height: 674px;
+  height: 100%;
   padding: 28px;
   background-color: var(--text-color_light);
   border: 2px solid var(--accent-color);
   border-radius: 10px;
+  overflow: auto;
 }
 .franchise-modal__close-buton {
   position: absolute;
@@ -93,7 +94,7 @@
   .franchise-modal {
     padding-top: 32px;
     width: 568px;
-    height: 668px;
+    height: 100%;
   }
   .franchise-modal__title {
     width: 322px;

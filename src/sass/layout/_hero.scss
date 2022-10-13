@@ -149,7 +149,7 @@
     margin-left: -26px;
     width: 333px;
     height: 50px;
-    background-image: url(/src/images/img-mobile/mobil-dots-bgr.png);
+    // background-image: url(/src/images/img-mobile/mobil-dots-bgr.png);
     // background-image: image-set ("/src/images/img-mobile/mobil-dots-bgr.png" 1x, "/src/images/img-mobile/mobil-dots-bgr@2x.png" 2x);
     // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-dots-bgr.png") 1x, url("/src/images/img-mobile/mobil-dots-bgr@2x.png") 2x);
 
@@ -180,7 +180,7 @@
 
 .hero__ice-cream-img {
     position: absolute;
-    background-image: url(/src/images/img-mobile/mobil-ice-cream.png);
+    // background-image: url(/src/images/img-mobile/mobil-ice-cream.png);
     // background-image: image-set ("/src/images/img-mobile/mobil-ice-cream.png" 1x, "/src/images/img-mobile/mobil-ice-cream@2x.png" 2x);
     // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-ice-cream.png") 1x, url("/src/images/img-mobile/mobil-ice-cream@2x.png") 2x);
 
@@ -321,7 +321,7 @@
         margin-left: -20px;
         width: 768px;
         height: 68px;
-        background-image: url(/src/images/img-tablet/tablet-dots-bgr.png);
+        // background-image: url(/src/images/img-tablet/tablet-dots-bgr.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-dots-bgr.png" 1x, "/src/images/img-tablet/tablet-dots-bgr@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-dots-bgr.png") 1x, url("/src/images/img-tablet/tablet-dots-bgr@2x.png") 2x);
         background-position: left bottom;
@@ -335,7 +335,7 @@
         left: 389px;
         // top: -380px;
         bottom: 0;
-        background-image: url(/src/images/img-tablet/tablet-ice-cream.png);
+        // background-image: url(/src/images/img-tablet/tablet-ice-cream.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-ice-cream.png" 1x, "/src/images/img-tablet/tablet-ice-cream@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-ice-cream.png") 1x, url("/src/images/img-tablet/tablet-ice-cream@2x.png") 2x);
 
@@ -365,6 +365,11 @@
         color: var(--text-color_light);
     }
 
+    .hero__plate-descr-arrow {
+        width: 40px;
+        margin: 13px 0 0 0;
+    }
+
     .hero__plate-img {
         z-index: 1;
         height: 152px;
@@ -372,7 +377,7 @@
         margin-right: 33px;
         display: block;
         position: relative;
-        background-image: url(/src/images/img-tablet/tablet-plate.png);
+        // background-image: url(/src/images/img-tablet/tablet-plate.png);
         // background-image: image-set ("/src/images/img-tablet/tablet-plate.png" 1x, "/src/images/img-tablet/tablet-plate@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-plate.png") 1x, url("/src/images/img-tablet/tablet-plate@2x.png") 2x);
 
@@ -390,11 +395,12 @@
         justify-content: space-between;
         display: flex;
         position: relative;
+        z-index: 1;
     }
 
     .hero__wrapper-img {
         position: absolute;
-        top: -3px;
+        top: 70px;
     }
 
     .hero {
@@ -403,7 +409,7 @@
 
     .hero-sec-mod {
         height: 587px;
-        position: absolute;
+        // position: absolute;
     }
 
     .hero__title {
@@ -470,16 +476,18 @@
 
     .hero__plate-container {
         position: relative;
-        margin-top: 41px;
+        margin-top: 70px;
         display: flex;
         align-items: center;
         margin-bottom: 64px;
         bottom: 0;
+        z-index: 2;
 
     }
 
+
     .hero__plate-descr {
-        padding-top: 30px;
+        padding-top: 50px;
         width: 200px;
         font-family: var(--primary-font);
         font-weight: 400;
@@ -489,6 +497,9 @@
     }
 
 
+    .hero__plate-descr-arrow {
+        margin: 13 0 0 0;
+    }
 
     .hero__plate-img {
         z-index: 1;
@@ -497,7 +508,7 @@
         margin-right: 14px;
         display: block;
         position: relative;
-        background-image: url(/src/images/img-desktop/desktop-plate.png);
+        // background-image: url(/src/images/img-desktop/desktop-plate.png);
         // background-image: image-set ("/src/images/img-desktop/desktop-plate.png" 1x, "/src/images/img-desktop/desktop-plate@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desktop-plate.png") 1x, url("/src/images/img-desktop/desktop-plate@2x.png") 2x);
 
@@ -528,10 +539,10 @@
     .hero__dots-img {
         bottom: 0;
         position: absolute;
-        margin-left: -20px;
+        margin-left: 0;
         height: 385px;
         width: 1200px;
-        background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
+        // background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
         // background-image: image-set ("/src/images/img-desktop/desctop-dots-bgr.png" 1x, "/src/images/img-desktop/desctop-dots-bgr@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-dots-bgr.png") 1x, url("/src/images/img-desktop/desctop-dots-bgr@2x.png") 2x);
         background-position: left bottom;
@@ -546,7 +557,7 @@
         position: absolute;
         left: 627px;
         bottom: 0;
-        background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
+        // background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
         // background-image: image-set ("/src/images/img-desktop/desctop-ice-cream.png" 1x, "/src/images/img-desktop/desctop-ice-cream@2x.png" 2x);
         // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-ice-cream.png") 1x, url("/src/images/img-desktop/desctop-ice-cream@2x.png") 2x);
 
