@@ -44,7 +44,7 @@
       </li>
       <li class="page-header__navigation-list-item">
         <a class="page-header__navigation-list-link link" href="#contacts"
-          >Contacts</a
+          >Contact</a
         >
       </li>
     </ul>
@@ -54,7 +54,10 @@
     buy-now-menu-open
     type="button"
   >
-    Buy now >
+    Buy now
+    <svg class="buy-now-button-arrow">
+      <use href="./images/sprite.svg#btn-arrow"></use>
+    </svg>
   </button>
 
   <div class="mobile-menu" id="mobile-menu" style="width: 0">
@@ -112,7 +115,8 @@
             class="mobile-menu__navigation-list-link link"
             href="#contacts"
             onclick="closeNav()"
-            >Contacts</a
+
+            >Contact</a
           >
         </li>
       </ul>
@@ -121,7 +125,10 @@
         buy-now-menu-open-mobile
         type="button"
       >
-        Buy now >
+        Buy now
+        <svg class="buy-now-button-arrow">
+          <use href="./images/sprite.svg#btn-arrow"></use>
+        </svg>
       </button>
     </div>
   </div>
