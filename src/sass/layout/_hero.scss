@@ -22,7 +22,6 @@
     color: var(--text-color_light);
 }
 
-
 .title-36px {
     font-size: 34px;
     letter-spacing: 0;
@@ -48,7 +47,6 @@
 .hero__points-of-sale_wrapper {
     padding-top: 50px;
     padding-bottom: 15px;
-    // display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -123,13 +121,6 @@
     margin-top: 15px;
 }
 
-// .hero__ice-cream-blur use path {
-//     width: 167px;
-//     height: 218px;
-//     fill: #fff;
-// }
-
-
 .hero__ice-cream-blur {
     position: relative;
     fill: rgb(255, 255, 255);
@@ -147,43 +138,16 @@
     bottom: 0;
     position: absolute;
     margin-left: -26px;
-    width: 333px;
+    width: 327px;
     height: 50px;
-    // background-image: url(/src/images/img-mobile/mobil-dots-bgr.png);
-    // background-image: image-set ("/src/images/img-mobile/mobil-dots-bgr.png" 1x, "/src/images/img-mobile/mobil-dots-bgr@2x.png" 2x);
-    // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-dots-bgr.png") 1x, url("/src/images/img-mobile/mobil-dots-bgr@2x.png") 2x);
-
-    // @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    // screen and (min-resolution: 192dpi) and (max-width: 767px),
-    // screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    //     background-image: url(/src/images/img-mobile/mobil-dots-bgr@2x.png);
-    // }
-
-    // background-position: left bottom;
     margin-left: -20px;
     background-repeat: no-repeat;
     left: -7px;
     bottom: 0;
 }
 
-// @media screen and (min-device-pixel-ratio: 2),
-// screen and (min-resolution: 192dpi),
-// screen and (min-resolution: 2dppx) {
-//     .hero__dots-img {
-//         background-image: url("../images/img-mobile/mobil-dots-bgr@2x.png");
-//     }
-// }
-
-
-
-
-
 .hero__ice-cream-img {
     position: absolute;
-    // background-image: url(/src/images/img-mobile/mobil-ice-cream.png);
-    // background-image: image-set ("/src/images/img-mobile/mobil-ice-cream.png" 1x, "/src/images/img-mobile/mobil-ice-cream@2x.png" 2x);
-    // background-image: -webkit-image-set (url("/src/images/img-mobile/mobil-ice-cream.png") 1x, url("/src/images/img-mobile/mobil-ice-cream@2x.png") 2x);
-
     width: 157px;
     height: 207.45px;
     background-repeat: no-repeat;
@@ -223,9 +187,6 @@
         display: flex;
         position: relative;
     }
-
-
-
     .hero__title {
         max-width: 182px;
         padding-top: 39px;
@@ -243,12 +204,9 @@
         letter-spacing: 0;
 
     }
-
-
     .hero__points-of-sale_wrapper {
         padding-top: 50px;
         padding-bottom: 0;
-        // display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
@@ -292,11 +250,8 @@
         position: absolute;
         margin-left: -12px;
     }
-
-
     .hero__ice-cream-blur {
         position: absolute;
-        // fill: rgba(252, 252, 252, 0.44);
         fill: rgb(255, 255, 255);
         opacity: 44%;
         background-repeat: no-repeat;
@@ -306,53 +261,30 @@
         height: 341.85px;
         left: 392px;
         bottom: 0;
-        // left: 2.46px;
-        // top: 0px;
-        // background: rgba(252, 252, 252, 0.44);
         filter: blur(26.8405px);
     }
-
-
-
-
     .hero__dots-img {
         bottom: 0;
         position: absolute;
         margin-left: -20px;
         width: 768px;
         height: 68px;
-        // background-image: url(/src/images/img-tablet/tablet-dots-bgr.png);
-        // background-image: image-set ("/src/images/img-tablet/tablet-dots-bgr.png" 1x, "/src/images/img-tablet/tablet-dots-bgr@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-dots-bgr.png") 1x, url("/src/images/img-tablet/tablet-dots-bgr@2x.png") 2x);
         background-position: left bottom;
         background-repeat: no-repeat;
     }
-
-
-
     .hero__ice-cream-img {
         position: absolute;
         left: 389px;
-        // top: -380px;
         bottom: 0;
-        // background-image: url(/src/images/img-tablet/tablet-ice-cream.png);
-        // background-image: image-set ("/src/images/img-tablet/tablet-ice-cream.png" 1x, "/src/images/img-tablet/tablet-ice-cream@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-ice-cream.png") 1x, url("/src/images/img-tablet/tablet-ice-cream@2x.png") 2x);
-
         height: 325px;
         width: 257px;
         margin-left: auto;
         background-repeat: no-repeat;
     }
-
-
-
     .hero__plate-container {
         position: relative;
-        // margin-top: 15px;
         display: flex;
         align-items: center;
-        // margin-bottom: 14px;
         height: 167px;
     }
 
@@ -377,10 +309,6 @@
         margin-right: 33px;
         display: block;
         position: relative;
-        // background-image: url(/src/images/img-tablet/tablet-plate.png);
-        // background-image: image-set ("/src/images/img-tablet/tablet-plate.png" 1x, "/src/images/img-tablet/tablet-plate@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-tablet/tablet-plate.png") 1x, url("/src/images/img-tablet/tablet-plate@2x.png") 2x);
-
         background-repeat: no-repeat;
     }
 
@@ -409,7 +337,6 @@
 
     .hero-sec-mod {
         height: 587px;
-        // position: absolute;
     }
 
     .hero__title {
@@ -437,8 +364,6 @@
         margin-top: 32px;
 
     }
-
-
     .hero__products {
         font-family: var(--primary-font);
         font-weight: 600;
@@ -455,8 +380,6 @@
         border: 2px solid var(--accent-color);
         border-radius: 8px;
     }
-
-
     .hero__made {
         margin-left: 34px;
         width: 111px;
@@ -472,8 +395,6 @@
         text-decoration-line: underline;
         color: var(--accent-color);
     }
-
-
     .hero__plate-container {
         position: relative;
         margin-top: 70px;
@@ -484,8 +405,6 @@
         z-index: 2;
 
     }
-
-
     .hero__plate-descr {
         padding-top: 50px;
         width: 200px;
@@ -495,12 +414,9 @@
         line-height: 140%;
         color: var(--text-color_light);
     }
-
-
     .hero__plate-descr-arrow {
         margin: 13 0 0 0;
     }
-
     .hero__plate-img {
         z-index: 1;
         height: 225px;
@@ -508,66 +424,38 @@
         margin-right: 14px;
         display: block;
         position: relative;
-        // background-image: url(/src/images/img-desktop/desktop-plate.png);
-        // background-image: image-set ("/src/images/img-desktop/desktop-plate.png" 1x, "/src/images/img-desktop/desktop-plate@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-desktop/desktop-plate.png") 1x, url("/src/images/img-desktop/desktop-plate@2x.png") 2x);
-
         background-repeat: no-repeat;
     }
-
-
     .hero__ice-cream-blur {
         position: relative;
-        // fill: rgba(252, 252, 252, 0.44);
         fill: rgb(255, 255, 255);
         opacity: 44%;
         background-repeat: no-repeat;
         background-image: url(/src/images/blur-ice-cream.svg);
-        // background-repeat: no-repeat;
         width: 477px;
         height: 589.64px;
-        // top: 31px;
         left: 634px;
-        // left: 2.46px;
-        // top: 0px;
-        // background: rgba(252, 252, 252, 0.44);
         filter: blur(26.8405px);
     }
-
-
-
     .hero__dots-img {
         bottom: 0;
         position: absolute;
         margin-left: 0;
         height: 385px;
         width: 1200px;
-        // background-image: url(/src/images/img-desktop/desctop-dots-bgr.png);
-        // background-image: image-set ("/src/images/img-desktop/desctop-dots-bgr.png" 1x, "/src/images/img-desktop/desctop-dots-bgr@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-dots-bgr.png") 1x, url("/src/images/img-desktop/desctop-dots-bgr@2x.png") 2x);
         background-position: left bottom;
         background-repeat: no-repeat;
         bottom: 0;
-        // left: 622px;
     }
-
-
-
     .hero__ice-cream-img {
         position: absolute;
         left: 627px;
         bottom: 0;
-        // background-image: url(/src/images/img-desktop/desctop-ice-cream.png);
-        // background-image: image-set ("/src/images/img-desktop/desctop-ice-cream.png" 1x, "/src/images/img-desktop/desctop-ice-cream@2x.png" 2x);
-        // background-image: -webkit-image-set (url("/src/images/img-desktop/desctop-ice-cream.png") 1x, url("/src/images/img-desktop/desctop-ice-cream@2x.png") 2x);
-
         height: 561px;
         width: 456px;
         margin-left: auto;
         background-repeat: no-repeat;
     }
-
-
     .hero__points-of-sale-amount {
         font-family: var(--primary-font);
         font-weight: 900;
@@ -578,7 +466,6 @@
         text-transform: uppercase;
         color: var(--text-color_dark);
     }
-
     .hero__points-of-sale-type {
         font-family: var(--primary-font);
         font-weight: 400;
