@@ -17,10 +17,26 @@
 
 
 }
-.team__img{
+.section-link__cow::before {
+    content: '';
+    background-image: url(../images/cow.png);
+    width: 36px;
+    height: 36px;
+
+}
+.section-link__weight::before {
+    content: '';
+    background-image: url(../images/weight.png);
+        width: 36px;
+        height: 36px;
+}
+.section-link__ice-cream::before {
+    content: '';
+    background-image: url(../images/ice-crema.png);
     width: 36px;
     height: 36px;
 }
+
 
 @media screen and (max-width: 767px) {
     .section-item__advantages {
