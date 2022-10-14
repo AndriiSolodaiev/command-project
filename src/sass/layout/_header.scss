@@ -15,6 +15,9 @@
 .logo__image {
     width: 40.47px;
     height: 37px;
+    animation: flip;
+        animation-duration: 2s;
+        animation-delay: 2s;
 }
 
 .mobile-menu-btn {

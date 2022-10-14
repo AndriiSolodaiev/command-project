@@ -144,6 +144,8 @@
     background-repeat: no-repeat;
     left: -7px;
     bottom: 0;
+    animation: lightSpeedInLeft;
+    animation-duration: 1s;
 }
 
 .hero__ice-cream-img {
@@ -153,6 +155,10 @@
     background-repeat: no-repeat;
     left: 62px;
     bottom: 0;
+
+    animation: lightSpeedInRight;
+    animation-duration: 1s;
+    
 }
 
 .hero__points-of-sale-amount {
@@ -310,6 +316,9 @@
         display: block;
         position: relative;
         background-repeat: no-repeat;
+        animation: rotateIn;
+        animation-duration: 1s;
+        animation-delay: 500ms;
     }
 
     .hero__plate-descr-arrow {
